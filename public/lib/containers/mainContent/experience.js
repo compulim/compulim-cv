@@ -4,7 +4,7 @@ import { css } from 'glamor';
 
 const BOX = css({
   display        : 'flex',
-  marginBottom   : '1.5em',
+  marginBottom   : '1em',
   marginLeft     : -48,
   paddingLeft    : 48,
   paddingTop     : 20,
@@ -109,9 +109,12 @@ export default class Experience extends React.Component {
                 { this.props.post }
               </div>
           }
-          <div className="responsibilities">
-            { this.props.children }
-          </div>
+          {
+            this.props.children &&
+              <div className="responsibilities">
+                { this.props.children }
+              </div>
+          }
         </div>
       </li>
     );

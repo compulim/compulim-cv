@@ -11,7 +11,7 @@ const BOX = css({
     fontSize     : 60,
     letterSpacing: '.05em',
     marginBottom : 0,
-    marginTop    : 20,
+    marginTop    : 40,
     textTransform: 'uppercase'
   }
 });

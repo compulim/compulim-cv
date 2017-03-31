@@ -65,7 +65,7 @@ export default class MainContent extends React.Component {
     return (
       <div { ...BOX }>
         <PersonalTitle name="William Wong">
-          <p>More than 15 years of professional software development. A full stack developer expertize in HTML, CSS, Node.js, React/Native, Redux, Webpack, Azure, Cordova, jQuery, and C#. Extensive experiences in UX design, MongoDB, i18n, and accessibility.</p>
+          <p>A full stack developer with more than 15 years of professional software development.</p>
           <p>Enjoy self-learning, visualizing data, and realizing ideas.</p>
         </PersonalTitle>
         <Section icon="Work" title="Work experience" { ...css({ paddingTop: 0, pageBreakInside: 'avoid' }) }>
@@ -91,6 +91,13 @@ export default class MainContent extends React.Component {
               to="Aug 2006"
               organization="Microsoft (Hong Kong) Limited"
               post="Software Design Engineer"
+            >
+            </Experience>
+            <Experience
+              from="Sep 2002"
+              to="Nov 2005"
+              organization="Hong Kong Baptist University"
+              post="Project Assistant"
             >
             </Experience>
           </ul>
@@ -305,16 +312,18 @@ export default class MainContent extends React.Component {
               from="Sep 2002"
               to="May 2006"
               organization="Hong Kong Baptist University"
-              post="Master of Philosophy in Computer Science"
+              post="Master of Philosophy, Computer Science"
             >
-              Focusing in GSM and Wi-Fi based positioning technologies.
+              Focusing on GSM and Wi-Fi based positioning technologies.
             </Experience>
             <Experience
               from="Sep 1999"
               to="May 2002"
               organization="Hong Kong Baptist University"
-              post="Bachelor of Science in Computer Science (Computer Systems)"
-            />
+              post="Bachelor of Science, Computer&nbsp;Science (Computer&nbsp;Systems)"
+            >
+              First-class Honors
+            </Experience>
           </ul>
         </Section>
         <Section icon="Repair" title="Skills and expertize">
