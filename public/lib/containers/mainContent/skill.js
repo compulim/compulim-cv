@@ -3,9 +3,10 @@
 import { css } from 'glamor';
 
 const BOX = css({
-  alignItems  : 'center',
-  display     : 'flex',
-  height      : '2em',
+  alignItems     : 'center',
+  display        : 'flex',
+  height         : '2em',
+  pageBreakInside: 'avoid',
 
   '& > .title': {
     alignSelf : 'flex-start',

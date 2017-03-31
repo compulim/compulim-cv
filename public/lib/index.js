@@ -17,6 +17,11 @@ insertGlobal('body', {
   minHeight : '100%'
 });
 
+insertGlobal('@page', {
+  margin: 0,
+  size  : 'portrait'
+});
+
 const BOX = css({
   alignItems     : 'stretch',
   boxShadow      : '0 0 10px rgba(0, 0, 0, .2)',

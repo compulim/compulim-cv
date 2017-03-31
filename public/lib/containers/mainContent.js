@@ -6,6 +6,7 @@ import PersonalTitle from './mainContent/personalTitle';
 import Project from './mainContent/project';
 import Section from './mainContent/section';
 import Skill from './mainContent/skill';
+import SkillColumn from './mainContent/skillColumn';
 
 const SHOW_MORE_PROJECTS = false;
 
@@ -16,29 +17,42 @@ const BOX = css({
   paddingRight   : 60,
   minHeight      : '100%',
 
-  '& .three-columns': {
-    display   : 'flex',
-    paddingTop: 20,
-    width     : '100%',
+  '& .skills': {
+    position: 'relative',
 
-    '& > .spacer': {
-      flex: .2
+    '& > .three-columns': {
+      display   : 'flex',
+      paddingTop: 20,
+      width     : '100%',
+
+      '& > .spacer': {
+        flex: .2
+      },
+
+      '& > .column': {
+        flex: 1
+      }
     },
 
-    '& > .column': {
-      flex: 1,
+    '& .icon': {
+      backgroundColor: 'White',
+      border         : 'solid 2px Black',
+      borderRadius   : 10,
+      height         : 10,
+      left           : -48,
+      position       : 'absolute',
+      bottom         : 18,
+      width          : 10
+    },
 
-      '& > h1': {
-        fontSize     : 16,
-        fontWeight   : 600,
-        marginBottom : '1em',
-        marginTop    : 0,
-
-        '&:not(:first-child)': {
-          marginTop: '.8em'
-        }
-      }
-    }
+    '& .clear-line': {
+      backgroundColor: 'White',
+      height         : 25,
+      left           : -48,
+      position       : 'absolute',
+      bottom         : 0,
+      width          : 14
+    },
   }
 });
 
@@ -300,54 +314,65 @@ export default class MainContent extends React.Component {
           </ul>
         </Section>
         <Section icon="Repair" title="Skills and expertize">
-          <div className="three-columns">
-            <div className="column">
-              <h1>Frontend</h1>
-              <Skill title="HTML" star="4" />
-              <Skill title="CSS" star="4" />
-              <Skill title="React" star="4" />
-              <Skill title="React Native" star="2" />
-              <Skill title="Redux" star="3" />
-              <Skill title="jQuery" star="4" />
-              <h1>Backend</h1>
-              <Skill title="Node.js" star="4" />
-              <Skill title="Express" star="4" />
-              <Skill title="MongoDB" star="2" />
-              <h1>Language</h1>
-              <Skill title="ES2017" star="4" />
-              <Skill title="C#" star="4" />
+          <div className="skills">
+            <div className="three-columns">
+              <div className="column">
+                <SkillColumn title="Frontend">
+                  <Skill title="HTML" star="4" />
+                  <Skill title="CSS" star="4" />
+                  <Skill title="React" star="4" />
+                  <Skill title="React Native" star="2" />
+                  <Skill title="Redux" star="3" />
+                  <Skill title="jQuery" star="4" />
+                </SkillColumn>
+                <SkillColumn title="Backend">
+                  <Skill title="Node.js" star="4" />
+                  <Skill title="Express" star="4" />
+                  <Skill title="MongoDB" star="2" />
+                </SkillColumn>
+                <SkillColumn title="Language">
+                  <Skill title="ES2017" star="4" />
+                  <Skill title="C#" star="4" />
+                </SkillColumn>
+              </div>
+              <div className="spacer" />
+              <div className="column">
+                <SkillColumn title="Azure">
+                  <Skill title="ARM" star="4" />
+                  <Skill title="Web App" star="5" />
+                  <Skill title="Mobile App" star="3" />
+                  <Skill title="VNet + VPN" star="3" />
+                  <Skill title="Storage" star="4" />
+                  <Skill title="IoT Hub" star="3" />
+                  <Skill title="Cloud Service" star="3" />
+                  <Skill title="Cortana Suite" star="2" />
+                </SkillColumn>
+              </div>
+              <div className="spacer" />
+              <div className="column">
+                <SkillColumn title="Toolchain">
+                  <Skill title="Git + GitHub" star="4" />
+                  <Skill title="Gulp" star="4" />
+                  <Skill title="Webpack" star="3" />
+                  <Skill title="Yeoman" star="3" />
+                  <Skill title="VS Code" star="4" />
+                  <Skill title="VSTS" star="4" />
+                  <Skill title="Mocha/BDD" star="3" />
+                  <Skill title="Webdriver" star="3" />
+                </SkillColumn>
+                <SkillColumn title="Process">
+                  <Skill title="Scrum" star="4" />
+                  <Skill title="UX FnF" star="3" />
+                  <Skill title="Localization" star="5" />
+                  <Skill title="Accessibility" star="3" />
+                </SkillColumn>
+              </div>
             </div>
-            <div className="spacer" />
-            <div className="column">
-              <h1>Azure</h1>
-              <Skill title="ARM" star="4" />
-              <Skill title="Web App" star="5" />
-              <Skill title="Mobile App" star="3" />
-              <Skill title="VNet + VPN" star="3" />
-              <Skill title="Storage" star="4" />
-              <Skill title="IoT Hub" star="3" />
-              <Skill title="Cloud Service" star="3" />
-              <Skill title="Cortana Suite" star="2" />
-            </div>
-            <div className="spacer" />
-            <div className="column">
-              <h1>Toolchain</h1>
-              <Skill title="Git + GitHub" star="4" />
-              <Skill title="Gulp" star="4" />
-              <Skill title="Webpack" star="3" />
-              <Skill title="Yeoman" star="3" />
-              <Skill title="VS Code" star="4" />
-              <Skill title="VSTS" star="4" />
-              <Skill title="Mocha/BDD" star="3" />
-              <Skill title="Webdriver" star="3" />
-              <h1>Process</h1>
-              <Skill title="Scrum" star="4" />
-              <Skill title="UX FnF" star="3" />
-              <Skill title="Localization" star="5" />
-              <Skill title="Accessibility" star="3" />
-            </div>
+            <div className="clear-line" />
+            <div className="icon" />
           </div>
         </Section>
+        <div { ...css({ pageBreakBefore: 'always' }) } />
       </div>
     );
   }

@@ -18,14 +18,15 @@ const BOX = css({
     letterSpacing: 5,
 
     '& > .icon': {
-      border        : '2px Solid Black',
-      borderRadius  : ICON_SIZE,
-      display       : 'flex',
-      height        : ICON_SIZE,
-      justifyContent: 'center',
-      overflow      : 'hidden',
-      textAlign     : 'center',
-      width         : ICON_SIZE,
+      backgroundColor: 'White',
+      border         : '2px Solid Black',
+      borderRadius   : ICON_SIZE,
+      display        : 'flex',
+      height         : ICON_SIZE,
+      justifyContent : 'center',
+      overflow       : 'hidden',
+      textAlign      : 'center',
+      width          : ICON_SIZE,
 
       '& > i': {
         alignSelf : 'center',
@@ -47,10 +48,12 @@ const BOX = css({
   '& > .content-box': {
     marginBottom: '1.5em',
     marginLeft  : ICON_SIZE / 2 + 1,
+    marginTop   : -5,
 
     '& > .content': {
       borderLeft   : 'solid 2px Black',
       paddingLeft  : ICON_SIZE,
+      paddingTop   : 5,
 
       '& > ul': {
         marginTop    : 0,
