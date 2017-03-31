@@ -314,7 +314,7 @@ export default class MainContent extends React.Component {
               organization="Hong Kong Baptist University"
               post="Master of Philosophy, Computer Science"
             >
-              Focusing on GSM and Wi-Fi based positioning technologies.
+              Research topic titled "Mobile Location Estimation Systems", with 3 journal articles and 3 conference papers.
             </Experience>
             <Experience
               from="Sep 1999"
