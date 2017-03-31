@@ -3,6 +3,7 @@
 import { css, insertGlobal } from 'glamor';
 import SideBar from './containers/sideBar';
 import MainContent from './containers/mainContent';
+import * as Styles from './styles';
 
 insertGlobal('html, body, #reactRoot', {
   backgroundColor: '#F7F7F7',
@@ -11,7 +12,7 @@ insertGlobal('html, body, #reactRoot', {
 });
 
 insertGlobal('body', {
-  fontFamily: `Calibri, 'Helvetica Neue', Arial, sans-serif`,
+  fontFamily: Styles.BODY_FONT_FAMILY,
   margin    : 0,
   minHeight : '100%'
 });

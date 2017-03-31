@@ -1,6 +1,7 @@
 'use strict';
 
 import { css } from 'glamor';
+import * as Styles from '../../styles';
 
 const ICON_SIZE = 40;
 
@@ -11,7 +12,7 @@ const BOX = css({
   '& > .title': {
     alignItems   : 'center',
     display      : 'flex',
-    fontFamily   : `'Century Gothic', Arial, sans-serif`,
+    fontFamily   : Styles.SECTION_TITLE_FONT_FAMILY,
     fontSize     : 24,
     fontWeight   : 600,
     letterSpacing: 5,

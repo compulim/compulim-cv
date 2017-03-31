@@ -44,11 +44,11 @@ export default class SideBar extends React.Component {
             <a href="http://compulim.info/">compulim.info</a>
           </Property>
           <Property icon="ContactInfo" title="Associations">
-            <div>Microsoft Alumni</div>
+            <div>Microsoft Alumni Network</div>
           </Property>
         </Section>
         <Section title="Social">
-          <Property icon="Ferry" title="Open source packages">
+          <Property icon="Ferry" title="Community">
             <div>
               <a href="https://npmjs.com/~compulim" target="_blank">npmjs.com/~compulim</a>
             </div>

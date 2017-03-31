@@ -46,7 +46,7 @@ export default class MainContent extends React.Component {
     return (
       <div { ...BOX }>
         <PersonalTitle name="William Wong">
-          <p>More than 15 years of professional software development. A full stack developer expertize in HTML, CSS, Node.js, React/Native, Redux, Webpack, Azure, Cordova, jQuery, and C#. Extensive experiences in UX design, Webpack, rollup.js, MongoDB, i18n, and accessibility.</p>
+          <p>More than 15 years of professional software development. A full stack developer expertize in HTML, CSS, Node.js, React/Native, Redux, Webpack, Azure, Cordova, jQuery, and C#. Extensive experiences in UX design, MongoDB, i18n, and accessibility.</p>
           <p>Enjoy self-learning, visualizing data, and realizing ideas.</p>
         </PersonalTitle>
         <Section icon="Work" title="Work experience">
@@ -309,6 +309,7 @@ export default class MainContent extends React.Component {
               <Skill title="jQuery" star="4" />
               <h1>Backend</h1>
               <Skill title="Node.js" star="4" />
+              <Skill title="Express" star="4" />
               <Skill title="MongoDB" star="2" />
               <h1>Language</h1>
               <Skill title="ES2017" star="4" />
@@ -330,12 +331,13 @@ export default class MainContent extends React.Component {
             <div className="column">
               <h1>Toolchain</h1>
               <Skill title="Git + GitHub" star="4" />
-              <Skill title="Mocha/BDD" star="3" />
               <Skill title="Gulp" star="4" />
               <Skill title="Webpack" star="3" />
               <Skill title="Yeoman" star="3" />
               <Skill title="VS Code" star="4" />
               <Skill title="VSTS" star="4" />
+              <Skill title="Mocha/BDD" star="3" />
+              <Skill title="Webdriver" star="3" />
               <h1>Process</h1>
               <Skill title="Scrum" star="4" />
               <Skill title="UX FnF" star="3" />

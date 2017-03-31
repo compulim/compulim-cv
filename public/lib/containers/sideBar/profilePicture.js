@@ -19,8 +19,10 @@ const BOX = css({
   },
 
   '& > .inner-shadow': {
-    // TODO: Disable shadow on print
-    boxShadow   : 'inset 0 0 20px 5px rgba(0, 0, 0, .5)',
+    '@media screen': {
+      boxShadow   : 'inset 0 0 20px 5px rgba(0, 0, 0, .5)'
+    },
+
     borderRadius: PHOTO_SIZE,
     height      : PHOTO_SIZE,
     left        : 0,

@@ -1,13 +1,15 @@
 'use strict';
 
 import { css } from 'glamor';
+import * as Styles from '../../styles';
 
 const BOX = css({
   marginBottom: 40,
 
   '& h1': {
-    fontFamily   : `'Century Gothic', sans-serif`,
+    fontFamily   : Styles.TITLE_FONT_FAMILY,
     fontSize     : 60,
+    letterSpacing: '.05em',
     marginBottom : 0,
     marginTop    : 20,
     textTransform: 'uppercase'

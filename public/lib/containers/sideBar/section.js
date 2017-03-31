@@ -1,6 +1,7 @@
 'use strict';
 
 import { css } from 'glamor';
+import * as Styles from '../../styles';
 
 const BOX = css({
   marginLeft: 50,
@@ -9,7 +10,7 @@ const BOX = css({
 
   '& > .title': {
     borderBottom : 'solid 2px White',
-    fontFamily   : `'Century Gothic', Arial, sans-serif`,
+    fontFamily   : Styles.SECTION_TITLE_FONT_FAMILY,
     fontSize     : 20,
     letterSpacing: 5,
     paddingBottom: 10,
