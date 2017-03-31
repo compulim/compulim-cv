@@ -19,6 +19,30 @@ export default class SideBar extends React.Component {
       <div { ...BOX }>
         <ProfilePicture />
         <Section title="Info">
+          <Property icon="MapPin" title="Address">
+            Room 1720
+            <br />
+            Ting Fuk House
+            <br />
+            On Ting Estate
+            <br />
+            Tuen Mun, N.T.
+            <br />
+            HONG KONG
+          </Property>
+          <Property icon="CellPhone" title="Cellphone">
+            +852 9153 0922
+            {
+              false &&
+                <div>20:00 - 12:00 PST</div>
+            }
+          </Property>
+          {
+            false &&
+              <Property icon="Clock" title="Timezone">
+                GMT+08 Hong Kong
+              </Property>
+          }
           <Property icon="Mail" title="Email">
             compulim@hotmail.com
           </Property>
@@ -30,6 +54,7 @@ export default class SideBar extends React.Component {
           <Property icon="Group" title="Social">
             <div>github.com/compulim</div>
             <div>twitter.com/compulim</div>
+            <div>linkedin.com/in/compulim</div>
           </Property>
         </Section>
         <Section title="References">

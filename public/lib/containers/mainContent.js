@@ -77,6 +77,9 @@ export default class MainContent extends React.Component {
             />
           </ul>
         </Section>
+        <Section icon="Repair" title="Skills">
+          <p>Node.js</p>
+        </Section>
       </div>
     );
   }
