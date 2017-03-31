@@ -120,13 +120,13 @@ export default class MainContent extends React.Component {
               from="Mar 2016"
               title="Feasibility study with latest web technologies for Hong Kong Jockey Club"
             >
-              <p>Co-designed and co-developed a high-performance web app prototype for Hong Kong Jockey Club using cutting edge technologies: HTML5, responsive layout using Flexbox, React, Redux, and Electron. Interface with MongoDB and Solace thru Node.js middleware. Focusing on high-performance, demonstrated the potential of using latest web technologies for internal web app with high volume of data exchange.</p>
+              <p>Co-designed and co-developed a high-performance web app prototype for Hong Kong Jockey Club using cutting edge technologies: HTML5, responsive layout using CSS3 flexbox, React, Redux, and Electron. Interface with MongoDB and Solace thru Node.js middleware. Focusing on high-performance, demonstrated the potential of using latest web technologies for internal web app with high volume of data exchange.</p>
             </Project>
             <Project
               from="Feb 2016"
               title="Tender proposal with Accenture"
             >
-              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for an internal web app for Hong Kong Jockey Club. Designed system architecture and involved in presentation preparation. Appointed as Frontend Architect Lead and steering committee member to lead the technical direction for the proposing project.</p>
+              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for Hong Kong Jockey Club. Designed system architecture and involved in presentation preparation. Appointed as Frontend Architect Lead and steering committee member to lead the technical direction for the proposing project.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -282,16 +282,16 @@ export default class MainContent extends React.Component {
         <Section icon="Glasses" title="Education">
           <ul>
             <Experience
-              from="2002"
-              to="2006"
+              from="Sep 2002"
+              to="May 2006"
               organization="Hong Kong Baptist University"
               post="Master of Philosophy in Computer Science"
             >
               Focusing in GSM and Wi-Fi based positioning technologies.
             </Experience>
             <Experience
-              from="1999"
-              to="2002"
+              from="Sep 1999"
+              to="May 2002"
               organization="Hong Kong Baptist University"
               post="Bachelor of Science in Computer Science (Computer Systems)"
             />

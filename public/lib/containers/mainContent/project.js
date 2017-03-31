@@ -9,6 +9,7 @@ export default class Project extends React.Component {
         from        ={ this.props.from }
         to          ={ this.props.to }
         organization={ this.props.title }
+        verticalDate={ true }
       >
         { this.props.children }
       </Experience>

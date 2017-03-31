@@ -31,7 +31,14 @@ const BOX = css({
 
   '& .date': {
     flexShrink: 0,
-    width: 150
+
+    '&.vertical': {
+      width: 100
+    },
+
+    '&:not(.vertical)': {
+      width: 170
+    }
   },
 
   '& .organization': {
@@ -71,9 +78,25 @@ export default class Experience extends React.Component {
       <li { ...BOX }>
         <div className="clear-line" />
         <div className="icon" />
-        <div className="date">
-          { this.props.from } { !!this.props.to && `\u2012 ${ this.props.to }` }
-        </div>
+        {
+          this.props.to ?
+            this.props.verticalDate ?
+              <div className="date vertical">
+                { this.props.from }
+                <br />
+                &#x205E;
+                <br />
+                { this.props.to }
+              </div>
+            :
+              <div className="date">
+                { this.props.from } &#x2012; { this.props.to }
+              </div>
+          :
+            <div className={ `date${ this.props.verticalDate ? ' vertical' : ''}` }>
+              { this.props.from }
+            </div>
+        }
         <div className="content">
           <div className="organization">
             { this.props.organization }
