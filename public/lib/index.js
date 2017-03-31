@@ -7,7 +7,6 @@ import MainContent from './containers/mainContent';
 insertGlobal('html, body, #reactRoot', {
   backgroundColor: '#F7F7F7',
   fontSize       : 16,
-  height         : '100%',
   minHeight      : '100%'
 });
 

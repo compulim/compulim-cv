@@ -5,9 +5,8 @@ import { css } from 'glamor';
 const ICON_SIZE = 40;
 
 const BOX = css({
-  marginLeft: 60,
-  marginTop: 20,
   marginBottom: 40,
+  marginTop   : 20,
 
   '& .title': {
     alignItems   : 'center',
@@ -16,13 +15,22 @@ const BOX = css({
     fontSize     : 24,
     fontWeight   : 600,
     letterSpacing: 5,
-    paddingRight : 100,
 
     '& .icon': {
-      border      : '2px Solid Black',
-      borderRadius: ICON_SIZE,
-      height      : ICON_SIZE,
-      width       : ICON_SIZE
+      border        : '2px Solid Black',
+      borderRadius  : ICON_SIZE,
+      display       : 'flex',
+      height        : ICON_SIZE,
+      justifyContent: 'center',
+      overflow      : 'hidden',
+      textAlign     : 'center',
+      width         : ICON_SIZE,
+
+      '& i': {
+        alignSelf : 'center',
+        fontSize  : 30,
+        marginLeft: 5
+      }
     },
 
     '& .text': {
@@ -75,7 +83,12 @@ export default class Section extends React.Component {
     return (
       <div { ...BOX }>
         <div className="title">
-          <div className="icon"></div>
+          <div className="icon">
+            {
+              this.props.icon &&
+                <i className={ `ms-Icon ms-Icon--${ this.props.icon }` } aria-hidden="true"></i>
+            }
+          </div>
           <div className="text">{ this.props.title }</div>
         </div>
         <div className="content-box">

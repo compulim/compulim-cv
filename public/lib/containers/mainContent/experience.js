@@ -6,6 +6,7 @@ const SMALL_ICON_SIZE = 20;
 
 const BOX = css({
   '& .date': {
+    flexShrink: 0,
     width: 150
   },
 

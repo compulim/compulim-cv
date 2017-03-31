@@ -3,7 +3,7 @@
 import { css } from 'glamor';
 
 const BOX = css({
-  marginLeft: 60,
+  marginLeft: 50,
   marginTop: 20,
   marginBottom: 50,
 
@@ -18,17 +18,18 @@ const BOX = css({
   },
 
   '& dl': {
-    marginTop: 30,
+    marginTop: 20,
 
     '& dt': {
-      fontWeight: 500,
-      marginTop: 20
+      fontWeight  : 500,
+      marginBottom: 5,
+      marginTop   : 20
     },
 
     '& dd': {
-      color       : '#CCC',
-      fontWeight  : 200,
-      marginLeft  : 0
+      color     : '#CCC',
+      fontWeight: 200,
+      marginLeft: 0
     }
   }
 });
