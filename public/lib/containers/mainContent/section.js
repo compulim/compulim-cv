@@ -45,7 +45,7 @@ const BOX = css({
 
   '& > .content-box': {
     marginBottom: '1.5em',
-    marginLeft  : ICON_SIZE / 2,
+    marginLeft  : ICON_SIZE / 2 + 1,
 
     '& > .content': {
       borderLeft   : 'solid 2px Black',
