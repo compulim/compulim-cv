@@ -77,6 +77,9 @@ export default class SideBar extends React.Component {
             <div>Camping and hiking</div>
             <div>Travelling</div>
           </Property>
+          <Property icon="Trophy" title="Awards">
+            <div>Nokia North Asia Lumia Challenge 2013</div>
+          </Property>
         </Section>
         <Section title="References">
           <Property icon="PartyLeader" title="Prof. Joseph Kee-yin NG">
