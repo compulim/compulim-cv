@@ -40,6 +40,9 @@ export default class SideBar extends React.Component {
           <Property icon="Mail" title="Email">
             <a href="mailto:compulim@hotmail.com">compulim@hotmail.com</a>
           </Property>
+          <Property icon="Website" title="Website">
+            <a href="http://compulim.info/">compulim.info</a>
+          </Property>
           <Property icon="ContactInfo" title="Associations">
             <div>Microsoft Alumni</div>
           </Property>
