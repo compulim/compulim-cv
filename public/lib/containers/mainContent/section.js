@@ -43,36 +43,19 @@ const BOX = css({
     }
   },
 
-  '& .content-box': {
+  '& > .content-box': {
     marginBottom: '1.5em',
     marginLeft  : ICON_SIZE / 2,
 
-    '& .content': {
-      '& ul': {
-        borderLeft   : 'solid 2px Black',
+    '& > .content': {
+      borderLeft   : 'solid 2px Black',
+      paddingLeft  : ICON_SIZE,
+      paddingTop   : 20,
+
+      '& > ul': {
         marginTop    : 0,
-        paddingLeft  : ICON_SIZE,
-        paddingTop   : 20,
+        paddingLeft  : 0,
         listStyleType: 'none',
-
-        '& li': {
-          display      : 'flex',
-          marginLeft   : 0,
-          marginBottom: '1.5em',
-          paddingLeft  : 0,
-          position     : 'relative',
-
-          '& .icon': {
-            backgroundColor: 'white',
-            border: 'solid 2px Black',
-            borderRadius: 10,
-            height: 10,
-            left: -48,
-            position: 'absolute',
-            top: 3,
-            width: 10
-          }
-        }
       }
     }
   }

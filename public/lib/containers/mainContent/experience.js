@@ -2,9 +2,33 @@
 
 import { css } from 'glamor';
 
-const SMALL_ICON_SIZE = 20;
-
 const BOX = css({
+  display      : 'flex',
+  marginLeft   : -48,
+  marginBottom : '1.5em',
+  paddingLeft  : 48,
+  position     : 'relative',
+
+  '&:last-child .clear-line': {
+    backgroundColor: 'White',
+    height: '100%',
+    position: 'absolute',
+    left: 0,
+    top: 8,
+    width: 20
+  },
+
+  '& .icon': {
+    backgroundColor: 'white',
+    border: 'solid 2px Black',
+    borderRadius: 10,
+    height: 10,
+    left: 0,
+    position: 'absolute',
+    top: 3,
+    width: 10
+  },
+
   '& .date': {
     flexShrink: 0,
     width: 150
@@ -35,6 +59,7 @@ export default class Experience extends React.Component {
   render() {
     return (
       <li { ...BOX }>
+        <div className="clear-line" />
         <div className="icon" />
         <div className="date">
           { this.props.date }
