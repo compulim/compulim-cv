@@ -55,6 +55,7 @@ const BOX = css({
 
     '& > ul': {
       listStyleType: 'none',
+      marginTop: '.4em',
       paddingLeft: 0,
 
       '& > li': {
