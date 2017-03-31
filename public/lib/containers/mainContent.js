@@ -65,6 +65,7 @@ export default class MainContent extends React.Component {
               organization="Microsoft Corporation"
               post="Software Development Engineer II"
             >
+              Shipped OneDrive and Team Foundation Server.
             </Experience>
             <Experience
               from="Sep 2005"
