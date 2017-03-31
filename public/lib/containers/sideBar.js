@@ -86,7 +86,7 @@ export default class SideBar extends React.Component {
           </Property>
           <Property icon="Balloons" title="Hobbies">
             <div>Home IoT DIY</div>
-            <div>Snowboard</div>
+            <div>Snowboarding</div>
             <div>Gaming (FPS/3PS/<a href="https://worldofwarcraft.com" target="_blank">WoW</a>)</div>
             <div>Camping and hiking</div>
             <div>Travelling</div>
