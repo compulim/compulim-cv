@@ -40,9 +40,12 @@ export default class SideBar extends React.Component {
           <Property icon="Mail" title="Email">
             <a href="mailto:compulim@hotmail.com">compulim@hotmail.com</a>
           </Property>
+          <Property icon="ContactInfo" title="Associations">
+            <div>Microsoft Alumni</div>
+          </Property>
         </Section>
         <Section title="Social">
-          <Property icon="Ferry" title="Open source">
+          <Property icon="Ferry" title="Open source packages">
             <div>
               <a href="https://npmjs.com/~compulim" target="_blank">npmjs.com/~compulim</a>
             </div>
@@ -82,6 +85,13 @@ export default class SideBar extends React.Component {
             <div>Microsoft Corporation</div>
             <div>
               <a href="mailto:dancre@microsoft.com">dancre@microsoft.com</a>
+            </div>
+          </Property>
+          <Property icon="PartyLeader" title="David Zearing">
+            <div>Principal Software Engineer</div>
+            <div>Microsoft Corporation</div>
+            <div>
+              <a href="mailto:dzearing@microsoft.com">dzearing@microsoft.com</a>
             </div>
           </Property>
         </Section>
