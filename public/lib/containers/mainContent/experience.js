@@ -19,6 +19,15 @@ const BOX = css({
   },
 
   '& .responsibilities': {
+    textAlign: 'justify',
+
+    '& p:first-child': {
+      marginTop: '.4em'
+    },
+
+    '& p:last-child': {
+      marginBottom: '.4em'
+    }
   }
 });
 
@@ -34,9 +43,12 @@ export default class Experience extends React.Component {
           <div className="organization">
             { this.props.organization }
           </div>
-          <div className="post">
-            { this.props.post }
-          </div>
+          {
+            this.props.post &&
+              <div className="post">
+                { this.props.post }
+              </div>
+          }
           <div className="responsibilities">
             { this.props.children }
           </div>

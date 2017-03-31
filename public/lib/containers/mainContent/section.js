@@ -86,7 +86,7 @@ export default class Section extends React.Component {
           <div className="icon">
             {
               this.props.icon &&
-                <i className={ `ms-Icon ms-Icon--${ this.props.icon }` } aria-hidden="true"></i>
+                <i className={ `ms-Icon ms-Icon--${ this.props.icon }` } aria-hidden="true" />
             }
           </div>
           <div className="text">{ this.props.title }</div>

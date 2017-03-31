@@ -7,7 +7,7 @@ const BOX = css({
   marginTop: 20,
   marginBottom: 50,
 
-  '& .title': {
+  '& > .title': {
     borderBottom : 'solid 2px White',
     fontFamily   : `'Century Gothic', Arial, sans-serif`,
     fontSize     : 20,
@@ -17,20 +17,8 @@ const BOX = css({
     textTransform: 'uppercase'
   },
 
-  '& dl': {
-    marginTop: 20,
-
-    '& dt': {
-      fontWeight  : 500,
-      marginBottom: 5,
-      marginTop   : 20
-    },
-
-    '& dd': {
-      color     : '#CCC',
-      fontWeight: 200,
-      marginLeft: 0
-    }
+  '& > .content': {
+    marginTop: 20
   }
 });
 

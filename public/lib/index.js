@@ -17,6 +17,7 @@ insertGlobal('body', {
 });
 
 const BOX = css({
+  alignItems     : 'stretch',
   boxShadow      : '0 0 10px rgba(0, 0, 0, .2)',
   display        : 'flex',
   height         : '100%',
