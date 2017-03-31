@@ -3,30 +3,31 @@
 import { css } from 'glamor';
 
 const BOX = css({
-  display      : 'flex',
-  marginLeft   : -48,
-  marginBottom : '1.5em',
-  paddingLeft  : 48,
-  position     : 'relative',
+  display        : 'flex',
+  marginLeft     : -48,
+  marginBottom   : '1.5em',
+  paddingLeft    : 48,
+  pageBreakInside: 'avoid',
+  position       : 'relative',
 
   '&:last-child .clear-line': {
     backgroundColor: 'White',
-    height: '100%',
-    position: 'absolute',
-    left: 0,
-    top: 8,
-    width: 20
+    height         : '100%',
+    position       : 'absolute',
+    left           : 0,
+    top            : 8,
+    width          : 20
   },
 
   '& .icon': {
     backgroundColor: 'white',
-    border: 'solid 2px Black',
-    borderRadius: 10,
-    height: 10,
-    left: 0,
-    position: 'absolute',
-    top: 3,
-    width: 10
+    border         : 'solid 2px Black',
+    borderRadius   : 10,
+    height         : 10,
+    left           : 0,
+    position       : 'absolute',
+    top            : 3,
+    width          : 10
   },
 
   '& .date': {
@@ -62,8 +63,8 @@ const BOX = css({
 
     '& > ul': {
       listStyleType: 'none',
-      marginTop: '.4em',
-      paddingLeft: 0,
+      marginTop    : '.4em',
+      paddingLeft  : 0,
 
       '& > li': {
         marginBottom: '.4em'

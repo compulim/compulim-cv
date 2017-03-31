@@ -5,9 +5,10 @@ import { css } from 'glamor';
 const ICON_SIZE = 30;
 
 const BOX = css({
-  display     : 'flex',
-  marginBottom: 5,
-  marginTop   : 20,
+  display        : 'flex',
+  marginBottom   : 5,
+  marginTop      : 20,
+  pageBreakInside: 'avoid',
 
   '& > .icon': {
     fontSize   : ICON_SIZE,
