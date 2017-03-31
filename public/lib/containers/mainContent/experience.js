@@ -4,9 +4,10 @@ import { css } from 'glamor';
 
 const BOX = css({
   display        : 'flex',
-  marginLeft     : -48,
   marginBottom   : '1.5em',
+  marginLeft     : -48,
   paddingLeft    : 48,
+  paddingTop     : 20,
   pageBreakInside: 'avoid',
   position       : 'relative',
 
@@ -15,7 +16,7 @@ const BOX = css({
     height         : '100%',
     position       : 'absolute',
     left           : 0,
-    top            : 8,
+    top            : 28,
     width          : 20
   },
 
@@ -26,7 +27,7 @@ const BOX = css({
     height         : 10,
     left           : 0,
     position       : 'absolute',
-    top            : 3,
+    top            : 23,
     width          : 10
   },
 

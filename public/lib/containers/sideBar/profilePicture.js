@@ -7,7 +7,7 @@ const PHOTO_SIZE = 176;
 const BOX = css({
   border      : 'solid 2px White',
   borderRadius: PHOTO_SIZE,
-  margin      : '50px 60px',
+  margin      : '50px 60px 30px',
   position    : 'relative',
   height      : PHOTO_SIZE,
   width       : PHOTO_SIZE,

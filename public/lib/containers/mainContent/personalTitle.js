@@ -13,9 +13,6 @@ const BOX = css({
     marginBottom : 0,
     marginTop    : 20,
     textTransform: 'uppercase'
-  },
-
-  '& summary': {
   }
 });
 

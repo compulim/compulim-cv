@@ -7,7 +7,7 @@ const ICON_SIZE = 30;
 const BOX = css({
   display        : 'flex',
   marginBottom   : 5,
-  marginTop      : 20,
+  paddingTop     : 20,
   pageBreakInside: 'avoid',
 
   '& > .icon': {

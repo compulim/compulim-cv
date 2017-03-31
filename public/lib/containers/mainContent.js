@@ -17,8 +17,9 @@ const BOX = css({
   minHeight      : '100%',
 
   '& .three-columns': {
-    display: 'flex',
-    width  : '100%',
+    display   : 'flex',
+    paddingTop: 20,
+    width     : '100%',
 
     '& > .spacer': {
       flex: .2
@@ -49,7 +50,7 @@ export default class MainContent extends React.Component {
           <p>More than 15 years of professional software development. A full stack developer expertize in HTML, CSS, Node.js, React/Native, Redux, Webpack, Azure, Cordova, jQuery, and C#. Extensive experiences in UX design, MongoDB, i18n, and accessibility.</p>
           <p>Enjoy self-learning, visualizing data, and realizing ideas.</p>
         </PersonalTitle>
-        <Section icon="Work" title="Work experience">
+        <Section icon="Work" title="Work experience" { ...css({ paddingTop: 0, pageBreakInside: 'avoid' }) }>
           <ul>
             <Experience
               from="Nov 2011"
@@ -280,7 +281,7 @@ export default class MainContent extends React.Component {
             }
           </ul>
         </Section>
-        <Section icon="Glasses" title="Education">
+        <Section icon="Glasses" title="Education" { ...css({ pageBreakInside: 'avoid' }) }>
           <ul>
             <Experience
               from="Sep 2002"

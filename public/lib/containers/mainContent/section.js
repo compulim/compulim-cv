@@ -6,8 +6,8 @@ import * as Styles from '../../styles';
 const ICON_SIZE = 40;
 
 const BOX = css({
-  marginBottom: 40,
-  marginTop   : 20,
+  marginBottom: 20,
+  paddingTop  : 20,
 
   '& > .title': {
     alignItems   : 'center',
@@ -51,7 +51,6 @@ const BOX = css({
     '& > .content': {
       borderLeft   : 'solid 2px Black',
       paddingLeft  : ICON_SIZE,
-      paddingTop   : 20,
 
       '& > ul': {
         marginTop    : 0,
@@ -64,8 +63,16 @@ const BOX = css({
 
 export default class Section extends React.Component {
   render() {
+    const others = Object.keys(this.props).reduce((result, name) => {
+      if (/^data\-/.test(name)) {
+        result[name] = this.props[name];
+      }
+
+      return result;
+    }, {});
+
     return (
-      <div { ...BOX }>
+      <div { ...BOX } { ...others }>
         <div className="title">
           <div className="icon">
             {

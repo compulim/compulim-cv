@@ -4,9 +4,10 @@ import { css } from 'glamor';
 import * as Styles from '../../styles';
 
 const BOX = css({
-  marginLeft: 50,
-  marginTop: 20,
-  marginBottom: 50,
+  marginBottom   : 50,
+  marginLeft     : 50,
+  paddingTop     : 20,
+  pageBreakInside: 'avoid',
 
   '& > .title': {
     borderBottom : 'solid 2px White',
@@ -19,7 +20,7 @@ const BOX = css({
   },
 
   '& > .content': {
-    marginTop: 20
+    // marginTop: 20
   }
 });
 
