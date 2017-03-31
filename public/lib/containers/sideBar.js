@@ -58,7 +58,7 @@ export default class SideBar extends React.Component {
               <a href="https://bit.ly/vscode-compulim" target="_blank">bit.ly/vscode-compulim</a>
             </div>
           </Property>
-          <Property icon="Group" title="Social">
+          <Property icon="Group" title="Social networks">
             <div>
               <a href="https://github.com/compulim" target="_blank">github.com/compulim</a>
             </div>
@@ -72,7 +72,7 @@ export default class SideBar extends React.Component {
               <a href="https://account.xbox.com/en-US/Profile?gamertag=compulim" target="_blank">compulim</a> on Xbox Live
             </div>
           </Property>
-          <Property icon="Balloons" title="Hobbys">
+          <Property icon="Balloons" title="Hobbies">
             <div>Home IoT DIY</div>
             <div>Snowboard</div>
             <div>Gaming (FPS/3PS/<a href="https://worldofwarcraft.com" target="_blank">WoW</a>)</div>
