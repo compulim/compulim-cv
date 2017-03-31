@@ -53,6 +53,10 @@ const BOX = css({
       bottom         : 0,
       width          : 14
     },
+  },
+
+  '& > .puller': {
+    pageBreakBefore: 'always'
   }
 });
 
@@ -372,7 +376,7 @@ export default class MainContent extends React.Component {
             <div className="icon" />
           </div>
         </Section>
-        <div { ...css({ pageBreakBefore: 'always' }) } />
+        <div className="puller" />
       </div>
     );
   }
