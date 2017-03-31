@@ -66,6 +66,9 @@ export default class SideBar extends React.Component {
             <div>
               <a href="https://linkedin.com/in/compulim" target="_blank">linkedin.com/in/compulim</a>
             </div>
+            <div>
+              compulim on Xbox
+            </div>
           </Property>
           <Property icon="Balloons" title="Hobbys">
             <div>Home IoT DIY</div>
