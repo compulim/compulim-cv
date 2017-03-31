@@ -51,6 +51,15 @@ const BOX = css({
 
     '& p:last-child': {
       marginBottom: '.4em'
+    },
+
+    '& > ul': {
+      listStyleType: 'none',
+      paddingLeft: 0,
+
+      '& > li': {
+        marginBottom: '.4em'
+      }
     }
   }
 });
@@ -62,7 +71,7 @@ export default class Experience extends React.Component {
         <div className="clear-line" />
         <div className="icon" />
         <div className="date">
-          { this.props.from } &#x2012; { this.props.to || 'Present' }
+          { this.props.from } { !!this.props.to && `\u2012 ${ this.props.to }` }
         </div>
         <div className="content">
           <div className="organization">
