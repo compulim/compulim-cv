@@ -5,13 +5,38 @@ import Experience from './mainContent/experience';
 import PersonalTitle from './mainContent/personalTitle';
 import Project from './mainContent/project';
 import Section from './mainContent/section';
+import Skill from './mainContent/skill';
 
 const BOX = css({
   backgroundColor: 'White',
   flex           : 7,
   paddingLeft    : 40,
   paddingRight   : 60,
-  minHeight      : '100%'
+  minHeight      : '100%',
+
+  '& .three-columns': {
+    display: 'flex',
+    width  : '100%',
+
+    '& > .spacer': {
+      flex: .2
+    },
+
+    '& > .column': {
+      flex: 1,
+
+      '& > h1': {
+        fontSize     : 16,
+        fontWeight   : 600,
+        marginBottom : '1em',
+        marginTop    : 0,
+
+        '&:not(:first-child)': {
+          marginTop: '.8em'
+        }
+      }
+    }
+  }
 });
 
 export default class MainContent extends React.Component {
@@ -49,9 +74,9 @@ export default class MainContent extends React.Component {
           <ul>
             <Project
               date="Feb 2016 - Present"
-              title="Public presentations"
+              title="Public speaking and meetups"
             >
-              <p>Presented technical topics in multiple local meetup groups, including ""Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively participated in meetup groups for discovering latest technologies, adopting, and bringing values to customers.</p>
+              <p>Presented technical topics in multiple local meetup groups, including "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively participated in meetup groups for discovering latest technologies, adopting, and bringing values to customers.</p>
             </Project>
             <Project
               date="2012 - Present"
@@ -68,7 +93,7 @@ export default class MainContent extends React.Component {
               organization="Hong Kong Baptist University"
               post="Master of Philosophy in Computer Science"
             >
-              Focusing on GSM and Wi-Fi based positioning technologies.
+              Focusing in GSM and Wi-Fi based positioning technologies.
             </Experience>
             <Experience
               date="1999 - 2002"
@@ -77,8 +102,56 @@ export default class MainContent extends React.Component {
             />
           </ul>
         </Section>
-        <Section icon="Repair" title="Skills">
-          <p>Node.js</p>
+        <Section icon="Repair" title="Skills and expertize">
+          <div className="three-columns">
+            <div className="column">
+              <h1>Frontend</h1>
+              <Skill title="HTML" star="4" />
+              <Skill title="CSS" star="4" />
+              <Skill title="React" star="4" />
+              <Skill title="React Native" star="2" />
+              <Skill title="Redux" star="3" />
+              <Skill title="jQuery" star="4" />
+              <h1>Backend</h1>
+              <Skill title="Node.js" star="4" />
+              <Skill title="MongoDB" star="2" />
+              <h1>Language</h1>
+              <Skill title="ES2017" star="4" />
+              <Skill title="C#" star="4" />
+              <Skill title="TypeScript" star="2" />
+              <Skill title="XAML" star="3" />
+            </div>
+            <div className="spacer" />
+            <div className="column">
+              <h1>Azure</h1>
+              <Skill title="ARM" star="4" />
+              <Skill title="Web App" star="5" />
+              <Skill title="Mobile App" star="3" />
+              <Skill title="VNet + VPN" star="3" />
+              <Skill title="Storage" star="4" />
+              <Skill title="IoT Hub" star="3" />
+              <Skill title="Cloud Service" star="3" />
+              <Skill title="Functions" star="1" />
+              <Skill title="Media Service" star="1" />
+            </div>
+            <div className="spacer" />
+            <div className="column">
+              <h1>Toolchain</h1>
+              <Skill title="Git + GitHub" star="4" />
+              <Skill title="Mocha/BDD" star="3" />
+              <Skill title="Gulp" star="4" />
+              <Skill title="Webpack.js" star="3" />
+              <Skill title="rollup.js" star="2" />
+              <Skill title="Yeoman" star="3" />
+              <Skill title="VS Code" star="4" />
+              <Skill title="VSTS" star="4" />
+              <Skill title="VSTS Build" star="5" />
+              <h1>Process</h1>
+              <Skill title="Scrum" star="4" />
+              <Skill title="UX FnF" star="3" />
+              <Skill title="Localization" star="5" />
+            </div>
+          </div>
         </Section>
       </div>
     );

@@ -24,7 +24,16 @@ const BOX = css({
 
     '& > .content': {
       color     : '#CCC',
-      fontWeight: 200
+      fontWeight: 200,
+
+      '& a': {
+        color: '#CCC',
+        textDecoration: 'none',
+
+        '&:hover': {
+          textDecoration: 'underline'
+        }
+      }
     }
   }
 });

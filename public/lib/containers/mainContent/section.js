@@ -8,7 +8,7 @@ const BOX = css({
   marginBottom: 40,
   marginTop   : 20,
 
-  '& .title': {
+  '& > .title': {
     alignItems   : 'center',
     display      : 'flex',
     fontFamily   : `'Century Gothic', Arial, sans-serif`,
@@ -16,7 +16,7 @@ const BOX = css({
     fontWeight   : 600,
     letterSpacing: 5,
 
-    '& .icon': {
+    '& > .icon': {
       border        : '2px Solid Black',
       borderRadius  : ICON_SIZE,
       display       : 'flex',
@@ -26,14 +26,14 @@ const BOX = css({
       textAlign     : 'center',
       width         : ICON_SIZE,
 
-      '& i': {
+      '& > i': {
         alignSelf : 'center',
         fontSize  : 30,
         marginLeft: 5
       }
     },
 
-    '& .text': {
+    '& > .text': {
       borderBottom : 'solid 2px Black',
       borderTop    : 'solid 2px Transparent',
       flex         : 1,

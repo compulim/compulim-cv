@@ -25,7 +25,7 @@ export default class SideBar extends React.Component {
             Redmond, WA  98052
           </Property>
           <Property icon="CellPhone" title="Cellphone">
-            +852 9153 0922
+            <a href="tel:+852 9153 0922">+852 9153 0922</a>
             {
               false &&
                 <div>20:00 - 12:00 PST</div>
@@ -38,29 +38,51 @@ export default class SideBar extends React.Component {
               </Property>
           }
           <Property icon="Mail" title="Email">
-            compulim@hotmail.com
+            <a href="mailto:compulim@hotmail.com">compulim@hotmail.com</a>
           </Property>
         </Section>
         <Section title="Social">
-          <Property icon="Ferry" title="NPM">
-            <div>npmjs.com/~compulim</div>
+          <Property icon="Ferry" title="Open source">
+            <div>
+              <a href="https://npmjs.com/~compulim" target="_blank">npmjs.com/~compulim</a>
+            </div>
+            <div>
+              <a href="https://bit.ly/vscode-compulim" target="_blank">bit.ly/vscode-compulim</a>
+            </div>
           </Property>
           <Property icon="Group" title="Social">
-            <div>github.com/compulim</div>
-            <div>twitter.com/compulim</div>
-            <div>linkedin.com/in/compulim</div>
+            <div>
+              <a href="https://github.com/compulim" target="_blank">github.com/compulim</a>
+            </div>
+            <div>
+              <a href="https://twitter.com/compulim" target="_blank">twitter.com/compulim</a>
+            </div>
+            <div>
+              <a href="https://linkedin.com/in/compulim" target="_blank">linkedin.com/in/compulim</a>
+            </div>
+          </Property>
+          <Property icon="Balloons" title="Hobbys">
+            <div>Home IoT DIY</div>
+            <div>Snowboard</div>
+            <div>Gaming (FPS/3PS/<a href="https://worldofwarcraft.com" target="_blank">WoW</a>)</div>
+            <div>Camping and hiking</div>
+            <div>Travelling</div>
           </Property>
         </Section>
         <Section title="References">
           <Property icon="PartyLeader" title="Prof. Joseph Kee-yin NG">
             <div>Ex-chairman</div>
             <div>IEEE Computer Chapter</div>
-            <div>jng@comp.hkbu.edu.hk</div>
+            <div>
+              <a href="mailto:jng@comp.hkbu.edu.hk">jng@comp.hkbu.edu.hk</a>
+            </div>
           </Property>
           <Property icon="PartyLeader" title="Dan Crevier">
             <div>Partner Group Engineering Manager</div>
             <div>Microsoft Corporation</div>
-            <div>dancre@microsoft.com</div>
+            <div>
+              <a href="mailto:dancre@microsoft.com">dancre@microsoft.com</a>
+            </div>
           </Property>
         </Section>
       </div>
