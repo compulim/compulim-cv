@@ -50,20 +50,22 @@ export default class MainContent extends React.Component {
         <Section icon="Work" title="Work experience">
           <ul>
             <Experience
-              date="2011 Nov - Present"
+              from="Nov 2011"
               organization="C&amp;R Holdings Limited"
               post="Solution Architect"
             >
               Lead the company technical direction and solve complex problems with creative solution.
             </Experience>
             <Experience
-              date="2006 Sep - 2011 Jul"
+              from="Sep 2006"
+              to="Jul 2011"
               organization="Microsoft Corporation"
               post="Software Development Engineer II"
             >
             </Experience>
             <Experience
-              date="2005 Sep - 2006 Aug"
+              from="Sep 2005"
+              to="Aug 2006"
               organization="Microsoft (Hong Kong) Limited"
               post="Software Design Engineer"
             >
@@ -73,13 +75,13 @@ export default class MainContent extends React.Component {
         <Section icon="FavoriteList" title="Project highlights">
           <ul>
             <Project
-              date="Feb 2016 - Present"
+              from="Feb 2016"
               title="Public speaking and meetups"
             >
               <p>Presented technical topics in multiple local meetup groups, including "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively participated in meetup groups for discovering latest technologies, adopting, and bringing values to customers.</p>
             </Project>
             <Project
-              date="2012 - Present"
+              from="2012"
               title="Electronic form solution for Hong Kong International Airport"
             >
               <p>Co-developed electronic form solution for Hong Kong International Airport, from performance review to customer services logbook to janitor patrol reports, enabled mobile workforce to conduct their work on iPad, saving 1,000+ papers daily.</p>
@@ -89,14 +91,16 @@ export default class MainContent extends React.Component {
         <Section icon="Glasses" title="Education">
           <ul>
             <Experience
-              date="2002 - 2006"
+              from="2002"
+              to="2006"
               organization="Hong Kong Baptist University"
               post="Master of Philosophy in Computer Science"
             >
               Focusing in GSM and Wi-Fi based positioning technologies.
             </Experience>
             <Experience
-              date="1999 - 2002"
+              from="1999"
+              to="2002"
               organization="Hong Kong Baptist University"
               post="Bachelor of Science in Computer Science (Computer Systems)"
             />
@@ -133,6 +137,7 @@ export default class MainContent extends React.Component {
               <Skill title="Cloud Service" star="3" />
               <Skill title="Functions" star="1" />
               <Skill title="Media Service" star="1" />
+              <Skill title="Cortana Suite" star="2" />
             </div>
             <div className="spacer" />
             <div className="column">
@@ -150,6 +155,7 @@ export default class MainContent extends React.Component {
               <Skill title="Scrum" star="4" />
               <Skill title="UX FnF" star="3" />
               <Skill title="Localization" star="5" />
+              <Skill title="Accessibility" star="3" />
             </div>
           </div>
         </Section>

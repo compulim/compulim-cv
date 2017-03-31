@@ -6,7 +6,8 @@ export default class Project extends React.Component {
   render() {
     return (
       <Experience
-        date={ this.props.date }
+        from        ={ this.props.from }
+        to          ={ this.props.to }
         organization={ this.props.title }
       >
         { this.props.children }

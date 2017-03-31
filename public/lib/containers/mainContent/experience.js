@@ -62,7 +62,7 @@ export default class Experience extends React.Component {
         <div className="clear-line" />
         <div className="icon" />
         <div className="date">
-          { this.props.date }
+          { this.props.from } &#x2012; { this.props.to || 'Present' }
         </div>
         <div className="content">
           <div className="organization">
