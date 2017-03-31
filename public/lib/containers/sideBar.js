@@ -41,10 +41,12 @@ export default class SideBar extends React.Component {
             <a href="mailto:compulim@hotmail.com">compulim@hotmail.com</a>
           </Property>
           <Property icon="Website" title="Website">
-            <a href="http://compulim.info/">compulim.info</a>
+            <a href="http://compulim.info/" target="_blank">compulim.info</a>
           </Property>
           <Property icon="ContactInfo" title="Associations">
-            <div>Microsoft Alumni Network</div>
+            <div>
+              <a href="http://microsoftalumni.com/" target="_blank">Microsoft Alumni Network</a>
+            </div>
           </Property>
         </Section>
         <Section title="Social">
@@ -67,7 +69,7 @@ export default class SideBar extends React.Component {
               <a href="https://linkedin.com/in/compulim" target="_blank">linkedin.com/in/compulim</a>
             </div>
             <div>
-              compulim on Xbox
+              <a href="https://account.xbox.com/en-US/Profile?gamertag=compulim" target="_blank">compulim</a> on Xbox Live
             </div>
           </Property>
           <Property icon="Balloons" title="Hobbys">
