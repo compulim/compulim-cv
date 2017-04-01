@@ -36,7 +36,7 @@ export default class ProfilePicture extends React.Component {
   render() {
     return (
       <div { ...BOX }>
-        <img src="img/profile.jpg" />
+        <img src="img/profile6.jpg" />
         <div className="inner-shadow" />
       </div>
     );

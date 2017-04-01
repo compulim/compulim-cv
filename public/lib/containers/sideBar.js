@@ -19,14 +19,11 @@ export default class SideBar extends React.Component {
       <div { ...BOX }>
         <ProfilePicture />
         <Section title="Info">
-          {
-            false &&
-              <Property icon="MapPin" title="Address">
-                16541 Redmond Way #126-C
-                <br />
-                Redmond, WA  98052
-              </Property>
-          }
+          <Property icon="MapPin" title="Address">
+            16541 Redmond Way #126-C
+            <br />
+            Redmond, WA  98052
+          </Property>
           <Property icon="MapPin" title="Address">
             Room 1720, Ting Fuk House
             <br />
@@ -92,7 +89,7 @@ export default class SideBar extends React.Component {
             <div>Travelling</div>
           </Property>
           <Property icon="Trophy" title="Awards">
-            <div>Nokia North Asia Lumia Challenge 2013</div>
+            <div>Nokia North Asia<br />Lumia Challenge 2013</div>
           </Property>
         </Section>
         <Section title="References">
