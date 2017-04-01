@@ -65,8 +65,7 @@ export default class MainContent extends React.Component {
     return (
       <div { ...BOX }>
         <PersonalTitle name="William Wong">
-          <p>A full stack developer with more than 15 years of professional software development.</p>
-          <p>Enjoy self-learning, visualizing data, and realizing ideas.</p>
+          <p>Full stack developer. Love coding. Enjoy self-learning, visualizing data, and realizing ideas.</p>
         </PersonalTitle>
         <Section icon="Work" title="Work experience" { ...css({ paddingTop: 0, pageBreakInside: 'avoid' }) }>
           <ul>
@@ -102,20 +101,24 @@ export default class MainContent extends React.Component {
             </Experience>
           </ul>
         </Section>
-        <Section icon="GlobeFavorite" title="Community contribution">
+        <Section icon="GlobeFavorite" title="Community contributions">
           <ul>
             <Project title="Yeoman azure-web-app: Azure Web App with React for minimialist">
-              <p>Developed Yeoman scaffold for Azure&nbsp;Web&nbsp;App with React, Webpack, rollup.js, and imagemin. Designed for minimalist, it supports hot module replacement and multiple continuous deployment scenarios including Azure (Project&nbsp;Kudu), VSTS, and GitHub &quot;Deploy&nbsp;to&nbsp;Azure&quot; badge.</p>
+              <p>Developed a scaffold for Azure&nbsp;Web&nbsp;App with React, Webpack, rollup.js, and imagemin. Designed for minimalist, it supports hot module replacement and multiple continuous deployment scenarios including Azure (Project&nbsp;Kudu), VSTS, and GitHub &quot;Deploy&nbsp;to&nbsp;Azure&quot; badge.</p>
             </Project>
             <Project title="NPM azure-storage-fs: Node.js &quot;fs&quot;-like API for Azure Storage">
-              <p>Developed NPM package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering official SDK learning curve and add Azure support to existing projects including <a href="https://npmjs.com/package/ftpd" target="_blank">ftpd</a>.</p>
+              <p>Developed a package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering learning curve and allows developer to easily add Azure support to existing projects, including <a href="https://npmjs.com/package/ftpd" target="_blank">ftpd</a>.</p>
             </Project>
-            <Project title="Visual Studio Code: Close tag">
-              <p>Developed a Visual Studio Code extension that close HTML/XML tags, designed to work with React JSX, and has more than 24,000 downloads.</p>
+            <Project title="Visual Studio Code extensions">
+              <ul>
+                <li>Published 10 extensions and presented a how-to talk in a local meetup group.</li>
+                <li>Close tag: close HTML/XML and React JSX tags, has more than 24K downloads</li>
+                <li>Express: host Express server and interact with status bar</li>
+              </ul>
             </Project>
           </ul>
         </Section>
-        <Section icon="FavoriteList" title="Project highlight">
+        <Section icon="FavoriteList" title="Project highlights" { ...css({ pageBreakBefore: 'always' }) }>
           <ul>
             <Project
               from="Feb 2016"
@@ -144,7 +147,7 @@ export default class MainContent extends React.Component {
               to="Apr 2017"
               title="Mobile positioning app for Hong Kong Baptist University"
             >
-              <p>Designed and developed an exhibition app with mobile positioning research group at Hong Kong Baptist University. Implemented in React Native on iOS and Android, the app talks to OpenWrt routers and Azure Web App, displays kiosk on map to enhance overall experience.</p>
+              <p>Designed and developed an exhibition app with mobile positioning research group. Implemented in React Native on iOS and Android, the app talks to OpenWrt routers and Azure Web App, displays kiosk on map to enhance overall experience.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -160,7 +163,7 @@ export default class MainContent extends React.Component {
               from="Mar 2016"
               title="Web technologies adoption study for Hong Kong Jockey Club"
             >
-              <p>Co-designed and co-developed a high-performance web app proof-of-concept for Hong&nbsp;Kong&nbsp;Jockey&nbsp;Club for technologies adoption study: HTML5, responsive&nbsp;layout, CSS3 flexbox, React, Redux, and Electron. Interface with MongoDB and Solace thru Node.js. Demonstrated the potential of web technologies with high volume of data exchange similar to high-frequency trading.</p>
+              <p>Co-designed and co-developed a web app proof-of-concept for technologies adoption study: HTML5, responsive&nbsp;layout, CSS3 flexbox, React, and Electron. Interface with MongoDB and Solace thru Node.js. Demonstrated the potential of web technologies with high volume of data exchange similar to high-frequency trading.</p>
             </Project>
             <Project
               from="Feb 2016"
@@ -236,7 +239,7 @@ export default class MainContent extends React.Component {
               from="Feb 2012"
               title="Electronic form app for Hong Kong International Airport"
             >
-              <p>Developed electronic form app for Hong Kong International Airport, running on iPad, the PhoneGap/HTML5 app simulates traditional pen-and-paper data input. From performance review to customer services logbook to janitor patrol reports, enabled mobile workforce to conduct their work on iPad, saving 1,000+ papers daily.</p>
+              <p>Developed an electronic form app, running on iPad, the PhoneGap/HTML5 app reproduces traditional pen-and-paper data input. From performance review to customer services logbook to janitor patrol reports, enabled mobile workforce to conduct their work on iPad, saving 1,000+ papers daily.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -256,8 +259,8 @@ export default class MainContent extends React.Component {
                 <li>Focused on highly visible UI on SkyDrive: pixel-perfect CSS tweaks, command bar, navigation bar, notification bar, and IE Jump List. Expertise on cross-browser behavior, RTL and localization. Also worked on asynchronous C# code to backend services.</li>
                 <li>Enhanced file uploader with improved queue and error management, debugged memory leaks with WinDBG and SOSEX. The uploader is reused between Hotmail and SkyDrive.</li>
                 <li>Beat time zone difference and collaborate with Microsoft Japan team to co-develop features and debug localized network layer issues.</li>
-                <li>Achieved 80% code coverage, and migrated unit tests from NMock 2.0 to Moq.</li>
-                <li>Owned VM base machine image and centralized nightly VM distribution, help cut down the cost to maintain VM machine individually. </li>
+                <li>Achieved 80% code coverage, and migrated tests from NMock to Moq.</li>
+                <li>Owned VM base machine image and centralized nightly VM distribution, helped lower the cost to maintain VM individually.</li>
               </ul>
             </Project>
             {
@@ -277,8 +280,8 @@ export default class MainContent extends React.Component {
             >
               <ul>
                 <li>Became the UI go-to person and Build Facilitating Developer. Promoted MVC pattern and TDD. Introduced prebuilt VMs to cut down forward integration turnaround time for the team.</li>
-                <li>Designed and implemented caching and lazy rendering for complicated WinForm dialogs with 300+ controls. Intensive experiences with CLR profiling work.</li>
-                <li>Developed LINQ-based Active Accessibility interop, improved unit tests performance, reliability, and reduced coding time from hours to average 30 minutes.</li>
+                <li>Designed and implemented caching and lazy rendering for complicated WinForm with 300+ controls. Intensive hands-on with CLR profiling.</li>
+                <li>Developed LINQ-based Active Accessibility interop, cut down test run time, improved reliability, and reduced coding effort.</li>
               </ul>
             </Project>
             {
