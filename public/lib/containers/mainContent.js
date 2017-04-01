@@ -256,11 +256,10 @@ export default class MainContent extends React.Component {
               title="OneDrive"
             >
               <ul>
-                <li>Focused on highly visible UI on SkyDrive: pixel-perfect CSS tweaks, command bar, navigation bar, notification bar, and IE Jump List. Expertise on cross-browser behavior, RTL and localization. Also worked on asynchronous C# code to backend services.</li>
-                <li>Enhanced file uploader with improved queue and error management, debugged memory leaks with WinDBG and SOSEX. The uploader is reused between Hotmail and SkyDrive.</li>
+                <li>Focused on highly visible UI: pixel-perfect CSS tweaks, command bar, navigation bar, notification bar, and IE Jump List. Expertise on cross-browser behavior, RTL and localization. Also worked on asynchronous C# code to backend services.</li>
+                <li>Enhanced Silverlight file uploader with improved queue and error management, debugged memory leaks with WinDBG and SOSEX.</li>
                 <li>Beat time zone difference and collaborate with Microsoft Japan team to co-develop features and debug localized network layer issues.</li>
                 <li>Achieved 80% code coverage, and migrated tests from NMock to Moq.</li>
-                <li>Owned VM base machine image and centralized nightly VM distribution, helped lower the cost to maintain VM individually.</li>
               </ul>
             </Project>
             {
