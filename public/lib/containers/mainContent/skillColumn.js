@@ -3,6 +3,7 @@
 import { css } from 'glamor';
 
 const STYLE = css({
+  marginBottom   : '1em',
   pageBreakInside: 'avoid',
 
   '& > h1': {

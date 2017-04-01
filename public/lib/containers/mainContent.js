@@ -102,7 +102,20 @@ export default class MainContent extends React.Component {
             </Experience>
           </ul>
         </Section>
-        <Section icon="FavoriteList" title="Project highlights">
+        <Section icon="GlobeFavorite" title="Community contribution">
+          <ul>
+            <Project title="Yeoman azure-web-app: Azure Web App with React for minimialist">
+              <p>Developed Yeoman scaffold for Azure&nbsp;Web&nbsp;App with React, Webpack, rollup.js, and imagemin. Designed for minimalist, it supports hot module replacement and multiple continuous deployment scenarios including Azure (Project&nbsp;Kudu), VSTS, and GitHub &quot;Deploy&nbsp;to&nbsp;Azure&quot; badge.</p>
+            </Project>
+            <Project title="NPM azure-storage-fs: Node.js &quot;fs&quot;-like API for Azure Storage">
+              <p>Developed NPM package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering official SDK learning curve and add Azure support to existing projects including <a href="https://npmjs.com/package/ftpd" target="_blank">ftpd</a>.</p>
+            </Project>
+            <Project title="Visual Studio Code: Close tag">
+              <p>Developed a Visual Studio Code extension that close HTML/XML tags, designed to work with React JSX, and has more than 24,000 downloads.</p>
+            </Project>
+          </ul>
+        </Section>
+        <Section icon="FavoriteList" title="Project highlight">
           <ul>
             <Project
               from="Feb 2016"
@@ -121,17 +134,17 @@ export default class MainContent extends React.Component {
                 </Project>
             }
             <Project
+              from="Oct 2016"
+              title="Baggage management system for Hong Kong International Airport"
+            >
+              <p>Designed and developed web frontend for baggage management system using React, Redux, Webpack, Bootstrap, MongoDB, and continuous integrated and deployed to Azure using VSTS. The web app is able to find bags arrived seconds ago. Incoming data is very dynamic and accurate reporting is required. PDF reporting is achieved thru shipping Redux store to print server implemented in Node.js and PhantomJS.</p>
+            </Project>
+            <Project
               from="Nov 2016"
               to="Apr 2017"
               title="Mobile positioning app for Hong Kong Baptist University"
             >
               <p>Designed and developed an exhibition app with mobile positioning technologies from research group at Hong Kong Baptist University. Implemented in React Native, Redux, and MongoDB, supported on iOS and Android, and hosted on Windows Azure Web App, the solution talks to OpenWrt routers and positioning system, display kiosk information and exhibition map to enhance the visitors' experience.</p>
-            </Project>
-            <Project
-              from="Oct 2016"
-              title="Baggage management system for Hong Kong International Airport"
-            >
-              <p>Designed and developed web frontend for baggage management system using React, Redux, Webpack, Bootstrap, and MongoDB. The web app is able to find bags arrived seconds ago. Incoming data is very dynamic and accurate reporting is required. PDF reporting is achieved thru shipping Redux store to print server implemented in Node.js and rendered in PhantomJS.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -140,7 +153,7 @@ export default class MainContent extends React.Component {
                   href="http://www.hongkongairport.com/eng/sustainability/environmental-management/air-quality/current-api.html"
                   title="Air Quality sub-website for Hong Kong International Airport"
                 >
-                  <p>Designed and co-developed the air quality sub-website for Hong Kong International Airport. Using Azure App Service as the serverless infrastructure, the project consumes pollution data in SQLite and exports into JSON. To support IE8, charts are PNG and generated using Node.js and PhantomJS. The website is built using React, Redux, SystemJS, and Webpack and data store is designed to be consumable by other part of the website.</p>
+                  <p>Designed and co-developed the air quality sub-website for Hong Kong International Airport. Using Azure App Service as the serverless infrastructure, the project use WebJobs to consume pollution data in SQLite and export into JSON. To support IE8, charts are PNG generated with Node.js and PhantomJS. The website is built using React, Redux, SystemJS, and Webpack and data store is designed to be consumable by other part of the website.</p>
                 </Project>
             }
             <Project
@@ -341,11 +354,8 @@ export default class MainContent extends React.Component {
                 <SkillColumn title="Backend">
                   <Skill title="Node.js" star="4" />
                   <Skill title="Express" star="4" />
+                  <Skill title="PhantomJS" star="3" />
                   <Skill title="MongoDB" star="2" />
-                </SkillColumn>
-                <SkillColumn title="Language">
-                  <Skill title="ES2017" star="4" />
-                  <Skill title="C#" star="4" />
                 </SkillColumn>
               </div>
               <div className="spacer" />
@@ -360,9 +370,19 @@ export default class MainContent extends React.Component {
                   <Skill title="Cloud Service" star="3" />
                   <Skill title="Cortana Suite" star="2" />
                 </SkillColumn>
+                <SkillColumn title="Process">
+                  <Skill title="Scrum" star="4" />
+                  <Skill title="UX FnF" star="3" />
+                  <Skill title="Localization" star="5" />
+                  <Skill title="Accessibility" star="3" />
+                </SkillColumn>
               </div>
               <div className="spacer" />
               <div className="column">
+                <SkillColumn title="Language">
+                  <Skill title="ES2017" star="4" />
+                  <Skill title="C#" star="4" />
+                </SkillColumn>
                 <SkillColumn title="Toolchain">
                   <Skill title="Git + GitHub" star="4" />
                   <Skill title="Gulp" star="4" />
@@ -372,12 +392,6 @@ export default class MainContent extends React.Component {
                   <Skill title="VSTS" star="4" />
                   <Skill title="Mocha/BDD" star="3" />
                   <Skill title="Webdriver" star="3" />
-                </SkillColumn>
-                <SkillColumn title="Process">
-                  <Skill title="Scrum" star="4" />
-                  <Skill title="UX FnF" star="3" />
-                  <Skill title="Localization" star="5" />
-                  <Skill title="Accessibility" star="3" />
                 </SkillColumn>
               </div>
             </div>

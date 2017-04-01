@@ -2,7 +2,7 @@
 
 import { css } from 'glamor';
 
-const BOX = css({
+const STYLE = css({
   display        : 'flex',
   marginBottom   : '1em',
   marginLeft     : -48,
@@ -11,7 +11,7 @@ const BOX = css({
   pageBreakInside: 'avoid',
   position       : 'relative',
 
-  '&:last-child .clear-line': {
+  '&:last-child > .clear-line': {
     backgroundColor: 'White',
     height         : '100%',
     position       : 'absolute',
@@ -20,7 +20,7 @@ const BOX = css({
     width          : 20
   },
 
-  '& .icon': {
+  '& > .icon': {
     backgroundColor: 'white',
     border         : 'solid 2px Black',
     borderRadius   : 10,
@@ -31,7 +31,7 @@ const BOX = css({
     width          : 10
   },
 
-  '& .date': {
+  '& > .date': {
     flexShrink: 0,
 
     '&.vertical': {
@@ -43,32 +43,43 @@ const BOX = css({
     }
   },
 
-  '& .organization': {
-    fontWeight: 600
-  },
-
-  '& .post': {
-    marginBottom: '.4em'
-  },
-
-  '& .responsibilities': {
-    textAlign: 'justify',
-
-    '& p:first-child': {
-      marginTop: '.4em'
+  '& > .content': {
+    '& > .organization': {
+      fontWeight: 600
     },
 
-    '& p:last-child': {
+    '& > .post': {
       marginBottom: '.4em'
     },
 
-    '& > ul': {
-      listStyleType: 'none',
-      marginTop    : '.4em',
-      paddingLeft  : 0,
+    '& > .responsibilities': {
+      textAlign: 'justify',
 
-      '& > li': {
+      '& a': {
+        color         : 'Black',
+        textDecoration: 'none',
+
+        '&:hover': {
+          textDecoration: 'underline'
+        }
+      },
+
+      '& p:first-child': {
+        marginTop: '.4em'
+      },
+
+      '& p:last-child': {
         marginBottom: '.4em'
+      },
+
+      '& > ul': {
+        listStyleType: 'none',
+        marginTop    : '.4em',
+        paddingLeft  : 0,
+
+        '& > li': {
+          marginBottom: '.4em'
+        }
       }
     }
   }
@@ -77,27 +88,29 @@ const BOX = css({
 export default class Experience extends React.Component {
   render() {
     return (
-      <li { ...BOX }>
+      <li { ...STYLE }>
         <div className="clear-line" />
         <div className="icon" />
         {
-          this.props.to ?
-            this.props.verticalDate ?
-              <div className="date vertical">
-                { this.props.from }
-                <br />
-                &#x205E;
-                <br />
-                { this.props.to }
-              </div>
+          !!this.props.from && (
+            this.props.to ?
+              this.props.verticalDate ?
+                <div className="date vertical">
+                  { this.props.from }
+                  <br />
+                  &#x205E;
+                  <br />
+                  { this.props.to }
+                </div>
+              :
+                <div className="date">
+                  { this.props.from } &#x2012; { this.props.to }
+                </div>
             :
-              <div className="date">
-                { this.props.from } &#x2012; { this.props.to }
+              <div className={ `date${ this.props.verticalDate ? ' vertical' : ''}` }>
+                { this.props.from }
               </div>
-          :
-            <div className={ `date${ this.props.verticalDate ? ' vertical' : ''}` }>
-              { this.props.from }
-            </div>
+          )
         }
         <div className="content">
           <div className="organization">

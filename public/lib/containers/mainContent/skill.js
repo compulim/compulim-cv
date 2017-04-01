@@ -5,7 +5,7 @@ import { css } from 'glamor';
 const BOX = css({
   alignItems     : 'center',
   display        : 'flex',
-  height         : '2em',
+  height         : '1.5em',
   pageBreakInside: 'avoid',
 
   '& > .title': {
