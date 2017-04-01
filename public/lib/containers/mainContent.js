@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { css } from 'glamor';
 import Experience from './mainContent/experience';
@@ -122,7 +122,7 @@ export default class MainContent extends React.Component {
               to="Present"
               title="Public speaking and meetups"
             >
-              <p>Trainer of Azure Bootcamp 2013 and 2015 and presented technical topics in multiple local meetup groups, including "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively participated in meetup groups, discovering latest technologies, adopting, and bringing values to customers.</p>
+              <p>Trainer of Azure Bootcamp 2013 and 2015 and active speaker in local meetup groups, delivered "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively discovering new technologies, adopting, and bringing values to customers.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -137,14 +137,14 @@ export default class MainContent extends React.Component {
               from="Oct 2016"
               title="Baggage management system for Hong Kong International Airport"
             >
-              <p>Designed and developed web frontend for baggage management system using React, Redux, Webpack, Bootstrap, MongoDB, and continuous integrated and deployed to Azure using VSTS. The web app is able to find bags arrived seconds ago. Incoming data is very dynamic and accurate reporting is required. PDF reporting is achieved thru shipping Redux store to print server implemented in Node.js and PhantomJS.</p>
+              <p>Designed and developed web frontend for baggage management system using Express, React, Redux, WebDriver, MongoDB, and continuous integrated and deployed to Azure using VSTS. The web app find bags arrived seconds ago and just-in-time reporting is achieved by shipping Redux store to PhantomJS print server.</p>
             </Project>
             <Project
               from="Nov 2016"
               to="Apr 2017"
               title="Mobile positioning app for Hong Kong Baptist University"
             >
-              <p>Designed and developed an exhibition app with mobile positioning technologies from research group at Hong Kong Baptist University. Implemented in React Native, Redux, and MongoDB, supported on iOS and Android, and hosted on Windows Azure Web App, the solution talks to OpenWrt routers and positioning system, display kiosk information and exhibition map to enhance the visitors' experience.</p>
+              <p>Designed and developed an exhibition app with mobile positioning research group at Hong Kong Baptist University. Implemented in React Native on iOS and Android, the app talks to OpenWrt routers and Azure Web App, displays kiosk on map to enhance overall experience.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -158,15 +158,15 @@ export default class MainContent extends React.Component {
             }
             <Project
               from="Mar 2016"
-              title="Feasibility study with latest web technologies for Hong Kong Jockey Club"
+              title="Web technologies adoption study for Hong Kong Jockey Club"
             >
-              <p>Co-designed and co-developed a high-performance web app prototype for Hong Kong Jockey Club using cutting edge technologies: HTML5, responsive layout using CSS3 flexbox, React, Redux, and Electron. Interface with MongoDB and Solace thru Node.js middleware. Focusing on high-performance, demonstrated the potential of using latest web technologies for internal web app with high volume of data exchange.</p>
+              <p>Co-designed and co-developed a high-performance web app proof-of-concept for Hong&nbsp;Kong&nbsp;Jockey&nbsp;Club for technologies adoption study: HTML5, responsive&nbsp;layout, CSS3 flexbox, React, Redux, and Electron. Interface with MongoDB and Solace thru Node.js. Demonstrated the potential of web technologies with high volume of data exchange similar to high-frequency trading.</p>
             </Project>
             <Project
               from="Feb 2016"
               title="Tender proposal with Accenture"
             >
-              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for Hong Kong Jockey Club. Designed system architecture and involved in presentation preparation. Appointed as Frontend Architect Lead and steering committee member to lead the technical direction for the proposing project.</p>
+              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for Hong Kong Jockey Club. Designed system architecture and presentation preparation. Appointed as Frontend Architect Lead and steering committee member for the proposing project.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -236,7 +236,7 @@ export default class MainContent extends React.Component {
               from="Feb 2012"
               title="Electronic form app for Hong Kong International Airport"
             >
-              <p>Developed electronic form app for Hong Kong International Airport, running on iPad, the PhoneGap/HTML5 app simulates traditional pen-and-paper data input. From performance review to customer services logbook to janitor patrol reports, enabled mobile workforce to conduct their work solely on iPad, saving 1,000+ papers daily.</p>
+              <p>Developed electronic form app for Hong Kong International Airport, running on iPad, the PhoneGap/HTML5 app simulates traditional pen-and-paper data input. From performance review to customer services logbook to janitor patrol reports, enabled mobile workforce to conduct their work on iPad, saving 1,000+ papers daily.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -391,7 +391,7 @@ export default class MainContent extends React.Component {
                   <Skill title="VS Code" star="4" />
                   <Skill title="VSTS" star="4" />
                   <Skill title="Mocha/BDD" star="3" />
-                  <Skill title="Webdriver" star="3" />
+                  <Skill title="WebDriver" star="3" />
                 </SkillColumn>
               </div>
             </div>
