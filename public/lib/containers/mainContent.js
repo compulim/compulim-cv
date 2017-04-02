@@ -75,7 +75,7 @@ export default class MainContent extends React.Component {
               organization="C&amp;R Holdings Limited"
               post="Solution Architect"
             >
-              Lead the company technical direction and solve complex problems with creative solution.
+              Lead company technical direction, people manager, web/mobile frontend development, Azure go-to person, internal/external trainer.
             </Experience>
             <Experience
               from="Sep 2006"
@@ -83,7 +83,10 @@ export default class MainContent extends React.Component {
               organization="Microsoft Corporation"
               post="Software Development Engineer II"
             >
-              Shipped OneDrive and Team Foundation Server.
+              <ul>
+                <li>OneDrive Web: High visible UI, pixel-perfect tweaks, fit-and-finish, localization, collaboration with Japan team.</li>
+                <li>Team Foundation Server: Full product cycle, UI go-to person, Build Facilitating Developer, nightly VM maintainer.</li>
+              </ul>
             </Experience>
             <Experience
               from="Sep 2005"
@@ -91,6 +94,7 @@ export default class MainContent extends React.Component {
               organization="Microsoft (Hong Kong) Limited"
               post="Software Design Engineer"
             >
+              Proof-of-Concept development: requirement gathering, development, integration, deployment, and training.
             </Experience>
             <Experience
               from="Sep 2002"
@@ -98,6 +102,7 @@ export default class MainContent extends React.Component {
               organization="Hong Kong Baptist University"
               post="Project Assistant"
             >
+              Mobile positioning using 3D self-organizing map, visualize models in C# and DirectX.
             </Experience>
           </ul>
         </Section>
@@ -113,7 +118,7 @@ export default class MainContent extends React.Component {
               title="NPM azure-storage-fs: Node.js &quot;fs&quot;-like API for Azure Storage"
               subTitle="https://npmjs.com/package/azure-storage-fs"
             >
-              <p>Developed a package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering learning curve and allows developer to easily add Azure support to existing projects, including <a href="https://npmjs.com/package/ftpd" target="_blank">ftpd</a>.</p>
+              <p>Developed a package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering learning curve and allows developer to easily add Azure support to existing projects.</p>
             </Project>
             <Project
               title="Visual Studio Code extensions"
