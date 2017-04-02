@@ -358,7 +358,7 @@ export default class MainContent extends React.Component {
                   <Skill title="HTML" star="4" />
                   <Skill title="CSS" star="4" />
                   <Skill title="React" star="4" />
-                  <Skill title="React Native" star="2" />
+                  <Skill title="React Native" star="3" />
                   <Skill title="Redux" star="3" />
                   <Skill title="jQuery" star="4" />
                 </SkillColumn>
