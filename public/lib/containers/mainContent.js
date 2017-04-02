@@ -84,8 +84,8 @@ export default class MainContent extends React.Component {
               post="Software Development Engineer II"
             >
               <ul>
-                <li>OneDrive: practiced Scrum, high visible UI, pixel-perfect tweaks, localization, fit-and-finish, deliver features with Japan team.</li>
-                <li>Team Foundation Server: full product cycle, UI go-to person, Build Facilitating Developer, nightly VM maintainer.</li>
+                <li>OneDrive Web: practiced Scrum, high visible UI, pixel-perfect tweaks, localization, fit-and-finish, deliver features with Japan team.</li>
+                <li>Team Foundation Server: full product cycle, UI go-to person, build facilitating developer, nightly VM maintainer.</li>
               </ul>
             </Experience>
             <Experience
@@ -342,7 +342,7 @@ export default class MainContent extends React.Component {
               organization="Hong Kong Baptist University"
               post="Master of Philosophy, Computer Science"
             >
-              Research topic titled "Mobile Location Estimation Systems", with 3 journal articles and 3 conference papers.
+              Research topic titled "Mobile Location Estimation Systems", published 3 journal articles and 3 conference papers.
             </Experience>
             <Experience
               from="Sep 1999"
