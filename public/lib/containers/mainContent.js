@@ -84,7 +84,7 @@ export default class MainContent extends React.Component {
               post="Software Development Engineer II"
             >
               <ul>
-                <li>OneDrive Web: practiced Scrum, high visible UI, pixel-perfect tweaks, localization, fit-and-finish, deliver features with Japan team.</li>
+                <li>OneDrive Web: practiced Scrum, high visible UI, pixel-perfect tweaks, fit-and-finish, localization, deliver features with Japan team.</li>
                 <li>Team Foundation Server: full product cycle, UI go-to person, build facilitating developer, nightly VM maintainer.</li>
               </ul>
             </Experience>
