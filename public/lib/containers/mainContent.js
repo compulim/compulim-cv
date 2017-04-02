@@ -109,13 +109,13 @@ export default class MainContent extends React.Component {
         <Section icon="GlobeFavorite" title="Community contributions">
           <ul>
             <Project
-              title="Yeoman azure-web-app: Azure Web App with React for minimialist"
+              title="Yeoman scaffolding: Azure Web App with React for minimialist"
               subTitle="https://npmjs.com/package/generator-azure-web-app"
             >
-              <p>Developed a scaffold for Azure&nbsp;Web&nbsp;App with React, Webpack, rollup.js, and imagemin. Designed for minimalist, it supports hot module replacement and multiple continuous deployment scenarios including Azure (Project&nbsp;Kudu), VSTS, and GitHub &quot;Deploy&nbsp;to&nbsp;Azure&quot; badge.</p>
+              <p>Developed a scaffolding for Azure&nbsp;Web&nbsp;App with React, Webpack, rollup.js, and imagemin. Designed for minimalist, it supports hot module replacement and multiple continuous deployment scenarios including Azure (Project&nbsp;Kudu), VSTS, and GitHub &quot;Deploy&nbsp;to&nbsp;Azure&quot; badge.</p>
             </Project>
             <Project
-              title="NPM azure-storage-fs: Node.js &quot;fs&quot;-like API for Azure Storage"
+              title="NPM package: Node.js &quot;fs&quot;-like API for Azure Storage"
               subTitle="https://npmjs.com/package/azure-storage-fs"
             >
               <p>Developed a package for interfacing Azure Storage using Node.js &quot;fs&quot;-like API, lowering learning curve and allows developer to easily add Azure support to existing projects.</p>
@@ -138,7 +138,7 @@ export default class MainContent extends React.Component {
               to="Present"
               title="Public speaking and meetups"
             >
-              <p>Trainer of Azure Bootcamp 2013 and 2015 and active speaker in local meetup groups, delivered "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "React Native and Swift integration", and "Introduction to Webpack". Actively discovering new technologies, adopting, and bringing values to customers.</p>
+              <p>Trainer of Azure Bootcamp 2013 and 2015 and active speaker in local meetup groups, delivered "Visual Studio Code extension authoring", "Integrating Alexa with Azure IoT Hub", "Introduction to Webpack", and "React Native and Swift integration". Actively discovering new technologies, adopting, and bringing values to customers.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
@@ -182,7 +182,7 @@ export default class MainContent extends React.Component {
               from="Feb 2016"
               title="Tender proposal with Accenture"
             >
-              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for Hong Kong Jockey Club. Designed system architecture and presentation preparation. Appointed as Frontend Architect Lead and steering committee member for the proposing project.</p>
+              <p>Worked with Accenture, Avanade, Fjord and PacificLink on a tender proposal for Hong Kong Jockey Club. Designed system architecture and presentation preparation. Proposed as "Frontend Architect Lead" and steering committee member.</p>
             </Project>
             {
               SHOW_MORE_PROJECTS &&
