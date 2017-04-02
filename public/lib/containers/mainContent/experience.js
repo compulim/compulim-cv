@@ -55,15 +55,6 @@ const STYLE = css({
     '& > .responsibilities': {
       textAlign: 'justify',
 
-      '& a': {
-        color         : 'Black',
-        textDecoration: 'none',
-
-        '&:hover': {
-          textDecoration: 'underline'
-        }
-      },
-
       '& p:first-child': {
         marginTop: '.4em'
       },
@@ -80,6 +71,15 @@ const STYLE = css({
         '& > li': {
           marginBottom: '.4em'
         }
+      }
+    },
+
+    '& a': {
+      color         : 'Black',
+      textDecoration: 'none',
+
+      '&:hover': {
+        textDecoration: 'underline'
       }
     }
   }
