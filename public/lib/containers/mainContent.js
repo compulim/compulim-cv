@@ -75,7 +75,7 @@ export default class MainContent extends React.Component {
               organization="C&amp;R Holdings Limited"
               post="Solution Architect"
             >
-              Lead company technical direction, people manager, web/mobile frontend development, Azure go-to person, internal/external trainer.
+              Technical leader, managed developers, web/mobile development, Azure go-to person, internal/external trainer.
             </Experience>
             <Experience
               from="Sep 2006"
@@ -84,8 +84,8 @@ export default class MainContent extends React.Component {
               post="Software Development Engineer II"
             >
               <ul>
-                <li>OneDrive Web: High visible UI, pixel-perfect tweaks, fit-and-finish, localization, collaboration with Japan team.</li>
-                <li>Team Foundation Server: Full product cycle, UI go-to person, Build Facilitating Developer, nightly VM maintainer.</li>
+                <li>OneDrive: practiced Scrum, high visible UI, pixel-perfect tweaks, localization, fit-and-finish, deliver features with Japan team.</li>
+                <li>Team Foundation Server: full product cycle, UI go-to person, Build Facilitating Developer, nightly VM maintainer.</li>
               </ul>
             </Experience>
             <Experience
@@ -126,8 +126,7 @@ export default class MainContent extends React.Component {
             >
               <ul>
                 <li>Published 10 extensions and presented a how-to talk in a local meetup group.</li>
-                <li>Close tag: close HTML/XML and React JSX tags, has more than 24K downloads</li>
-                <li>Express: host Express server and interact with status bar</li>
+                <li>Close tag: close HTML/XML and React JSX tags, has more than 24K downloads.</li>
               </ul>
             </Project>
           </ul>
