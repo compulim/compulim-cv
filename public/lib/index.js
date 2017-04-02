@@ -19,7 +19,7 @@ insertGlobal('body', {
 
 insertGlobal('@page', {
   margin: 0,
-  size  : 'portrait'
+  size  : 'letter portrait'
 });
 
 const BOX = css({
