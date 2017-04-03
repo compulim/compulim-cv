@@ -53,7 +53,7 @@ const STYLE = css({
     },
 
     '& > .responsibilities': {
-      textAlign: 'justify',
+      // textAlign: 'justify',
 
       '& p:first-child': {
         marginTop: '.4em'
