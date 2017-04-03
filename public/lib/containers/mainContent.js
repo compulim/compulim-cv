@@ -153,7 +153,7 @@ export default class MainContent extends React.Component {
               from="Oct 2016"
               title="Baggage management system for Hong Kong International Airport"
             >
-              <p>Designed and developed web frontend for baggage management system using Express, React, Redux, WebDriver, MongoDB, and continuous integrated and deployed to Azure using VSTS. The web app find bags arrived seconds ago and just-in-time reporting is achieved by shipping Redux store to PhantomJS print server.</p>
+              <p>Designed and developed web frontend for baggage management system using Express, React, Redux, WebDriver, MongoDB, and continuously integrated and deployed to Azure using VSTS. The web app find bags arrived seconds ago and just-in-time reporting is achieved by shipping Redux store to PhantomJS print server.</p>
             </Project>
             <Project
               from="Nov 2016"
