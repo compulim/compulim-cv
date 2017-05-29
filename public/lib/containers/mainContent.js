@@ -71,7 +71,7 @@ export default class MainContent extends React.Component {
           <ul>
             <Experience
               from="Nov 2011"
-              to="Present"
+              to="Apr 2017"
               organization="C&amp;R Holdings Limited"
               post="Solution Architect"
             >
@@ -215,10 +215,10 @@ export default class MainContent extends React.Component {
               SHOW_MORE_PROJECTS &&
                 <Project
                   from="Mar 2013"
-                  to="Present"
-                  title="Organizer and Trainer of Global Azure Bootcamp 2013, 2015, and 2017"
+                  to="Apr 2016"
+                  title="Organizer and Trainer of Global Azure Bootcamp"
                 >
-                  <p>Organizer and trainer of Global Windows Azure Bootcamp 2013 and 2015, hosted simultaneously at 96 locations worldwide with 7,000+ participants, providing 400+ hours of training sessions.</p>
+                  <p>Organizer and trainer of Global Windows Azure Bootcamp 2013, 2015, and 2016, hosted simultaneously at 96 locations worldwide with 7,000+ participants, providing 400+ hours of training sessions.</p>
                 </Project>
             }
             {
