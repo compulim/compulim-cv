@@ -1,4 +1,2 @@
-dist
-**/node_modules
-npm*.log*
-*.PublishSettings
+/lerna-debug.log
+/node_modules

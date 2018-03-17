@@ -1,30 +1,39 @@
 {
-  "name": "compulim-info",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel --out-dir lib src --ignore **/*.spec.js,**/*.test.js",
+    "clean": "rimraf lib",
+    "start": "node-dev .",
+    "start:watch": "concurrently --names \"build,start\" --kill-others \"npm run build -- --watch\" \"npm run start\"",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/compulim/compulim-info.git"
   },
-  "keywords": [
-    "compulim"
-  ],
   "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/compulim/compulim-info/issues"
   },
   "homepage": "https://github.com/compulim/compulim-info#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "dotenv": "^5.0.1",
+    "http-proxy": "^1.16.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^23.0.0-alpha.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-3": "^6.24.1",
     "concurrently": "^3.5.1",
     "jest": "^22.4.2",
-    "lerna": "^2.9.0",
     "node-dev": "^3.1.3",
-    "rimraf": "^2.6.2",
-    "serve": "^6.5.3"
+    "rimraf": "^2.6.2"
   }
 }

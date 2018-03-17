@@ -1,0 +1,23 @@
+{
+  "name": "app-compulim-info",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "glamor": "^2.20.40",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "clean": "rimraf build",
+    "eject": "react-scripts eject",
+    "serve": "serve -p 4001 .",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "serve": "^6.5.3"
+  }
+}

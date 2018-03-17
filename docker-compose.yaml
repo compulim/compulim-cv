@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app-compulim-info:
+    build:
+      context: ./packages/app-compulim-info
+    image: compulim.azurecr.io/app-compulim-info:latest
+  server:
+    build:
+      context: ./packages/server
+    image: compulim.azurecr.io/server:latest
