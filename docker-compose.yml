@@ -4,6 +4,10 @@ services:
     build:
       context: ./packages/app-compulim-info
     image: compulim.azurecr.io/app-compulim-info:latest
+  app-pixelduet-com:
+    build:
+      context: ./packages/app-pixelduet-com
+    image: compulim.azurecr.io/app-pixelduet-com:latest
   server:
     build:
       context: ./packages/server
