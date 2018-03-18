@@ -126,7 +126,7 @@ export default class MainContent extends React.Component {
             >
               <ul>
                 <li>Published 10 extensions and presented a how-to talk in a local meetup group.</li>
-                <li>Close tag: close HTML/XML and React JSX tags, has more than 24K downloads.</li>
+                <li>Close tag: close HTML/XML and React JSX tags, has more than 66K downloads.</li>
               </ul>
             </Project>
           </ul>
@@ -363,7 +363,8 @@ export default class MainContent extends React.Component {
                   <Skill title="CSS" star="4" />
                   <Skill title="React" star="4" />
                   <Skill title="React Native" star="3" />
-                  <Skill title="Redux" star="3" />
+                  <Skill title="Redux" star="4" />
+                  <Skill title="Angular" star="3" />
                   <Skill title="jQuery" star="4" />
                 </SkillColumn>
                 <SkillColumn title="Backend">
@@ -376,37 +377,37 @@ export default class MainContent extends React.Component {
               <div className="spacer" />
               <div className="column">
                 <SkillColumn title="Azure">
-                  <Skill title="ARM" star="4" />
+                  <Skill title="Bot Services" star="5" />
                   <Skill title="Web App" star="5" />
                   <Skill title="Mobile App" star="3" />
+                  <Skill title="Containers" star="3" />
                   <Skill title="VNet + VPN" star="3" />
                   <Skill title="Storage" star="4" />
                   <Skill title="IoT Hub" star="3" />
-                  <Skill title="Cloud Service" star="3" />
-                  <Skill title="Cortana Suite" star="2" />
                 </SkillColumn>
                 <SkillColumn title="Process">
                   <Skill title="Scrum" star="4" />
                   <Skill title="UX FnF" star="3" />
-                  <Skill title="Localization" star="5" />
-                  <Skill title="Accessibility" star="3" />
+                  <Skill title="Localization" star="4" />
+                  <Skill title="Accessibility" star="5" />
                 </SkillColumn>
               </div>
               <div className="spacer" />
               <div className="column">
                 <SkillColumn title="Language">
-                  <Skill title="ES2017" star="4" />
+                  <Skill title="JavaScript" star="5" />
                   <Skill title="C#" star="4" />
                 </SkillColumn>
                 <SkillColumn title="Toolchain">
                   <Skill title="Git + GitHub" star="4" />
+                  <Skill title="Docker" star="3" />
+                  <Skill title="Kubernetes" star="3" />
                   <Skill title="Gulp" star="4" />
                   <Skill title="Webpack" star="3" />
-                  <Skill title="Yeoman" star="3" />
                   <Skill title="VS Code" star="4" />
-                  <Skill title="VSTS" star="4" />
-                  <Skill title="Mocha/BDD" star="3" />
-                  <Skill title="WebDriver" star="3" />
+                  <Skill title="VS Online" star="4" />
+                  <Skill title="Mocha/Jest" star="4" />
+                  <Skill title="WebDriver" star="4" />
                 </SkillColumn>
               </div>
             </div>
