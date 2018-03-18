@@ -99,19 +99,13 @@ export default class SideBar extends React.Component {
               <a href="mailto:jng@comp.hkbu.edu.hk">jng@comp.hkbu.edu.hk</a>
             </div>
           </Property>
-          <Property icon="PartyLeader" title="Dan Crevier">
-            <div>Partner Group Engineering Manager</div>
+          <Property icon="PartyLeader" title="Lili Cheng">
+            <div>Corporate Vice Presidentr</div>
             <div>Microsoft Corporation</div>
-            <div>
-              <a href="mailto:dancrevier@hotmail.com">dancrevier@hotmail.com</a>
-            </div>
           </Property>
           <Property icon="PartyLeader" title="David Zearing">
             <div>Principal Software Engineer</div>
             <div>Microsoft Corporation</div>
-            <div>
-              <a href="mailto:dzearing@hotmail.com">dzearing@hotmail.com</a>
-            </div>
           </Property>
         </Section>
       </div>
