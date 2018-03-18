@@ -20,15 +20,11 @@ export default class SideBar extends React.Component {
         <ProfilePicture />
         <Section title="Info">
           <Property icon="MapPin" title="Address">
-            16541 Redmond Way #126-C
+            16541 Redmond Way
             <br />
             Redmond, WA  98052
           </Property>
           <Property icon="MapPin" title="Address">
-            Room 1720, Ting Fuk House
-            <br />
-            On Ting Estate
-            <br />
             Tuen Mun, N.T.
             <br />
             Hong Kong
