@@ -100,7 +100,7 @@ export default class SideBar extends React.Component {
             </div>
           </Property>
           <Property icon="PartyLeader" title="Lili Cheng">
-            <div>Corporate Vice Presidentr</div>
+            <div>Corporate Vice President</div>
             <div>Microsoft Corporation</div>
           </Property>
           <Property icon="PartyLeader" title="David Zearing">
