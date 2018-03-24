@@ -30,7 +30,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /health.txt
-            port: 80
+            port: 4001
           initialDelaySeconds: 3
           periodSeconds: 3
         ports:
@@ -40,7 +40,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /health.txt
-            port: 80
+            port: 4002
           initialDelaySeconds: 3
           periodSeconds: 3
         ports:
