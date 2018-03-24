@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "clean": "rimraf build",
     "eject": "react-scripts eject",
-    "serve": "serve -p 4001 .",
+    "serve": "serve -p 4001 build/",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },

@@ -6,8 +6,9 @@ RUN npm run build
 
 FROM node:alpine
 LABEL name="app-pixelduet-com" version="1.0.0"
-WORKDIR /webapp/
-COPY --from=0 /builder/build/ /webapp/
-EXPOSE 4002
 ENV PORT=4002
-ENTRYPOINT npx serve .
+EXPOSE 4002
+ENTRYPOINT npx --no-install serve .
+WORKDIR /webapp/
+RUN npm install serve -g
+COPY --from=0 /builder/build/ /webapp/

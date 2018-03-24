@@ -12,8 +12,12 @@
     "build": "react-scripts build",
     "clean": "rimraf build",
     "eject": "react-scripts eject",
-    "serve": "serve -p 4002 .",
+    "serve": "serve -p 4002 build/",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "serve": "^6.5.3"
   }
 }
