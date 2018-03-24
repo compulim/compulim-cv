@@ -23,6 +23,7 @@ spec:
             port: 80
           initialDelaySeconds: 3
           periodSeconds: 3
+          timeoutSeconds: 5
         ports:
         - containerPort: 80
       - name: app-compulim-info
@@ -33,6 +34,7 @@ spec:
             port: 4001
           initialDelaySeconds: 3
           periodSeconds: 3
+          timeoutSeconds: 5
         ports:
         - containerPort: 4001
       - name: app-pixelduet-com
@@ -43,6 +45,7 @@ spec:
             port: 4002
           initialDelaySeconds: 3
           periodSeconds: 3
+          timeoutSeconds: 5
         ports:
         - containerPort: 4002
 ---
