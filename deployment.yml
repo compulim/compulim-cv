@@ -17,14 +17,32 @@ spec:
       containers:
       - name: server
         image: compulim.azurecr.io/server:latest
+        livenessProbe:
+          httpGet:
+            path: /health.txt
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
         ports:
         - containerPort: 80
       - name: app-compulim-info
         image: compulim.azurecr.io/app-compulim-info:latest
+        livenessProbe:
+          httpGet:
+            path: /health.txt
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
         ports:
         - containerPort: 4001
       - name: app-pixelduet-com
         image: compulim.azurecr.io/app-pixelduet-com:latest
+        livenessProbe:
+          httpGet:
+            path: /health.txt
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
         ports:
         - containerPort: 4002
 ---
