@@ -21,33 +21,54 @@ spec:
           httpGet:
             path: /health.txt
             port: 80
-          initialDelaySeconds: 3
+          initialDelaySeconds: 10
           periodSeconds: 3
           timeoutSeconds: 5
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            cpu: 200m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
       - name: app-compulim-info
         image: compulim.azurecr.io/app-compulim-info:latest
         livenessProbe:
           httpGet:
             path: /health.txt
             port: 4001
-          initialDelaySeconds: 3
+          initialDelaySeconds: 10
           periodSeconds: 3
           timeoutSeconds: 5
         ports:
         - containerPort: 4001
+        resources:
+          limits:
+            cpu: 200m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
       - name: app-pixelduet-com
         image: compulim.azurecr.io/app-pixelduet-com:latest
         livenessProbe:
           httpGet:
             path: /health.txt
             port: 4002
-          initialDelaySeconds: 3
+          initialDelaySeconds: 10
           periodSeconds: 3
           timeoutSeconds: 5
         ports:
         - containerPort: 4002
+        resources:
+          limits:
+            cpu: 200m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
 ---
 apiVersion: v1
 kind: Service
