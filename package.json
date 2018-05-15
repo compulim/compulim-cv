@@ -1,7 +1,7 @@
 {
   "name": "compulim-info",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for compulim.info",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/compulim/compulim-info.git"
