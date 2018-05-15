@@ -28,6 +28,6 @@
     "serve": "^6.5.3"
   },
   "scripts": {
-    "deployment-docker-tag": "node scripts/dockerTag.js deployment.yml"
+    "write-docker-tag": "node scripts/writeDockerTag.js"
   }
 }
