@@ -4,7 +4,7 @@ import resumeMain from './resume';
 
 registerServiceWorker();
 
-if (window.location.pathname === '/packages') {
+if (window.location.search === '?packages') {
   packagesMain();
 } else {
   resumeMain();
