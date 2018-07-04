@@ -35,6 +35,7 @@ export default function main() {
         <NPMPackage name="react-dictate-button" />
         <NPMPackage name="react-drop-to-upload" />
         <NPMPackage name="react-film" repoOwner="spyip" />
+        <NPMPackage name="react-say" />
         <NPMPackage name="react-scroll-to-bottom" />
       </Category>
       <Category name="Tools">
