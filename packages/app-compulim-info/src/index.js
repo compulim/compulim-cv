@@ -4,7 +4,13 @@ import resumeMain from './resume';
 
 registerServiceWorker();
 
-if (window.location.search === '?packages') {
+const { location: { pathname, search } } = window;
+
+if (
+  search === '?packages'
+  || pathname === '/packages'
+  || pathname === '/packages.html'
+) {
   packagesMain();
 } else {
   resumeMain();
