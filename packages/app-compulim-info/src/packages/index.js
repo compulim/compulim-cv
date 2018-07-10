@@ -18,9 +18,19 @@ export default function main() {
     }
   });
 
+  const rateLimitURL = new URL('https://api.github.com/rate_limit');
+  const githubAccessToken = localStorage.getItem('GITHUB_ACCESS_TOKEN');
+
+  if (githubAccessToken) {
+    rateLimitURL.search = new URLSearchParams({ access_token: githubAccessToken });
+  }
+
   ReactDOM.render(
     <div className={ ROOT_CSS }>
       <h1>Packages</h1>
+      <p>
+        <a href="http://auth.compulim.info/github/authorize">Sign into GitHub</a> if you see <a href={ rateLimitURL.toString() }>API rate limiting</a>.
+      </p>
       <Category name="General">
         <NPMPackage name="azure-storage-fs" />
         <NPMPackage name="event-as-promise" />

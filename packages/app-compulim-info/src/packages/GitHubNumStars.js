@@ -54,7 +54,14 @@ export default class GitHubnumStarss extends React.Component {
       return;
     }
 
-    const res = await fetch(`https://api.github.com/repos/${ owner }/${ name }/stargazers`)
+    const url = new URL(`https://api.github.com/repos/${ encodeURI(owner) }/${ encodeURI(name) }/stargazers`);
+    const githubAccessToken = localStorage.getItem('GITHUB_ACCESS_TOKEN');
+
+    if (githubAccessToken) {
+      url.search = new URLSearchParams({ access_token: githubAccessToken });
+    }
+
+    const res = await fetch(url.toString());
 
     if (res.status !== 200) {
       return;

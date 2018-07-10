@@ -5,6 +5,7 @@ import resumeMain from './resume';
 registerServiceWorker();
 
 const { location: { pathname, search } } = window;
+const searchParams = new URLSearchParams(search);
 
 if (
   search === '?packages'
@@ -14,4 +15,10 @@ if (
   packagesMain();
 } else {
   resumeMain();
+}
+
+const githubAccessToken = searchParams.get('github_access_token');
+
+if (githubAccessToken) {
+  localStorage.setItem('GITHUB_ACCESS_TOKEN', githubAccessToken);
 }
