@@ -4,3 +4,7 @@ services:
     build:
       context: ./packages/app-compulim-info
     image: compulim.azurecr.io/app-compulim-info:latest
+  auth-compulim-info:
+    build:
+      context: ./packages/auth-compulim-info
+    image: compulim.azurecr.io/auth-compulim-info:latest
