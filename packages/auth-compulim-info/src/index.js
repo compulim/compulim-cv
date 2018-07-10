@@ -12,6 +12,10 @@ async function main() {
 
   app.use('/github', createGitHubRouter());
 
+  app.get('/health.txt', (req, res) => {
+    res.status(200).send('OK');
+  });
+
   app.listen(port, () => {
     console.log(`Server is listening to port ${ port }`);
   });
