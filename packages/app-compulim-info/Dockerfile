@@ -11,3 +11,4 @@ ENTRYPOINT npx --no-install serve . --listen 4001
 WORKDIR /webapp/
 RUN npm install serve@9 -g
 COPY --from=0 /builder/build/ /webapp/
+COPY --from=0 /builder/serve.json /webapp/
