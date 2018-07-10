@@ -16,4 +16,10 @@ export default props =>
     >
       { ({ numIssues }) => `${ (numIssues || 'No') } issues` }
     </GitHubNumIssues>
+    &nbsp;<GitHubNumStars
+      owner={ props.owner }
+      name={ props.name }
+    >
+      { ({ numStars }) => `${ (numStars || 'No') } stars` }
+    </GitHubNumStars>
   </React.Fragment>
