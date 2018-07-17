@@ -1,6 +1,7 @@
 import React from 'react';
 
 import GitHubNumIssues from './GitHubNumIssues';
+import GitHubNumStars from './GitHubNumStars';
 
 export default props =>
   <React.Fragment>
