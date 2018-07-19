@@ -51,6 +51,7 @@ export default function main() {
       </Category>
       <Category name="Tools">
         <GitHubPage owner="compulim" name="lock-walker" />
+        <GitHubPage owner="compulim" name="travis-encrypt" />
       </Category>
       <Category name="MessagePort">
         <NPMPackage name="childprocess-messageport" />
