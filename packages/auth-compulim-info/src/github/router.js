@@ -9,7 +9,7 @@ export default function () {
   router.get('/authorize', (req, res) => {
     const params = new URLSearchParams({
       client_id: process.env.GITHUB_CLIENT_ID,
-      redirect_uri: 'http://auth.compulim.info/github/complete',
+      redirect_uri: 'https://auth.compulim.info/github/complete',
       state: generateState()
     });
 
@@ -20,12 +20,12 @@ export default function () {
 
   router.get('/complete', async (req, res) => {
     try {
-      const reqURL = new URL(req.url, 'http://auth.compulim.info');
+      const reqURL = new URL(req.url, 'https://auth.compulim.info');
       const code = reqURL.searchParams.get('code');
       const state = reqURL.searchParams.get('state');
 
       if (state !== generateState()) {
-        res.set('location', 'http://www.compulim.info/');
+        res.set('location', 'https://www.compulim.info/');
         res.status(302);
         res.end();
       }
@@ -34,11 +34,11 @@ export default function () {
         process.env.GITHUB_CLIENT_ID,
         process.env.GITHUB_CLIENT_SECRET,
         code,
-        'http://auth.compulim.info/github/complete',
+        'https://auth.compulim.info/github/complete',
         state
       );
 
-      const redirectURL = new URL('http://compulim.info/');
+      const redirectURL = new URL('https://www.compulim.info/');
 
       redirectURL.search = new URLSearchParams({
         github_access_token: accessToken
