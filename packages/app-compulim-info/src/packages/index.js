@@ -29,7 +29,7 @@ export default function main() {
     <div className={ ROOT_CSS }>
       <h1>Packages</h1>
       <p>
-        <a href="http://auth.compulim.info/github/authorize">Sign into GitHub</a> if you see <a href={ rateLimitURL.toString() }>API rate limiting</a>.
+        <a href="//auth.compulim.info/github/authorize">Sign into GitHub</a> if you see <a href={ rateLimitURL.toString() }>API rate limiting</a>.
       </p>
       <Category name="General">
         <NPMPackage name="azure-storage-fs" />
