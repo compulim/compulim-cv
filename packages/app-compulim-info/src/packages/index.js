@@ -32,6 +32,7 @@ export default function main() {
         <a href="//auth.compulim.info/github/authorize">Sign into GitHub</a> if you see <a href={ rateLimitURL.toString() }>API rate limiting</a>.
       </p>
       <Category name="General">
+        <NPMPackage name="auto-reset-event" />
         <NPMPackage name="azure-storage-fs" />
         <NPMPackage name="event-as-promise" />
         <NPMPackage name="has-resolved" />
