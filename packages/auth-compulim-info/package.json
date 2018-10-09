@@ -7,19 +7,22 @@
     "build": "babel --out-dir lib src --ignore **/*.spec.js,**/*.test.js",
     "clean": "rimraf lib",
     "start": "node-dev lib",
-    "start:watch": "concurrently --names \"build,start\" --kill-others \"npm run build -- --watch\" \"npm run start\""
+    "start:watch": "concurrently --names \"build,start\" --kill-others \"npm run build -- --watch\" \"npm run start\"",
+    "watch": "npm run build -- --watch"
   },
   "dependencies": {
+    "@babel/runtime": "^7.1.2",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "get-port": "^3.2.0",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "concurrently": "^3.6.0",
     "node-dev": "^3.1.3"
   }
