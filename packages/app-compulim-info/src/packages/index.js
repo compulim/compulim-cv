@@ -36,7 +36,9 @@ export default function main() {
         <NPMPackage name="azure-storage-fs" />
         <NPMPackage name="event-as-promise" />
         <NPMPackage name="has-resolved" />
+        <NPMPackage name="memoize-one-with-dispose" />
         <NPMPackage name="on-error-resume-next" />
+        <NPMPackage name="promise-race-map" />
         <NPMPackage name="simple-update-in" />
         <NPMPackage name="version-from-git" />
         <NPMPackage name="web-speech-cognitive-services" />
