@@ -17,13 +17,13 @@ const STYLE = css({
   }
 });
 
-export default class SkillColumn extends React.Component {
-  render() {
-    return (
-      <div className={STYLE}>
-        <h1>{this.props.title}</h1>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+const SkillColumn = ({ children, title }) => {
+  return (
+    <div className={STYLE}>
+      <h1>{title}</h1>
+      {children}
+    </div>
+  );
+};
+
+export default SkillColumn;

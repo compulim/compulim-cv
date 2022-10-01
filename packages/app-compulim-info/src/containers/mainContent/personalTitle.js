@@ -16,13 +16,13 @@ const BOX = css({
   }
 });
 
-export default class PersonalTitle extends React.Component {
-  render() {
-    return (
-      <div className={BOX}>
-        <h1>{this.props.name}</h1>
-        <div className="summary">{this.props.children}</div>
-      </div>
-    );
-  }
-}
+const PersonalTitle = ({ children, name }) => {
+  return (
+    <div className={BOX}>
+      <h1>{name}</h1>
+      <div className="summary">{children}</div>
+    </div>
+  );
+};
+
+export default PersonalTitle;

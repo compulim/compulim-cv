@@ -38,18 +38,16 @@ const BOX = css({
   }
 });
 
-export default class Property extends React.Component {
-  render() {
-    return (
-      <div className={BOX}>
-        <div className="icon">
-          {this.props.icon && <i className={`ms-Icon ms-Icon--${this.props.icon}`} aria-hidden="true" />}
-        </div>
-        <div className="content-box">
-          <div className="title">{this.props.title}</div>
-          <div className="content">{this.props.children}</div>
-        </div>
+const Property = ({ children, icon, title }) => {
+  return (
+    <div className={BOX}>
+      <div className="icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+      <div className="content-box">
+        <div className="title">{title}</div>
+        <div className="content">{children}</div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Property;

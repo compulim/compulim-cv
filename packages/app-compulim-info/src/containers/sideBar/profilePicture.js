@@ -31,13 +31,13 @@ const BOX = css({
   }
 });
 
-export default class ProfilePicture extends React.Component {
-  render() {
-    return (
-      <div className={BOX}>
-        <img alt="William Wong" src="img/profile6.jpg" />
-        <div className="inner-shadow" />
-      </div>
-    );
-  }
-}
+const ProfilePicture = () => {
+  return (
+    <div className={BOX}>
+      <img alt="William Wong" src="img/profile6.jpg" />
+      <div className="inner-shadow" />
+    </div>
+  );
+};
+
+export default ProfilePicture;

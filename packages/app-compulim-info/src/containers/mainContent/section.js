@@ -64,28 +64,18 @@ const BOX = css({
   }
 });
 
-export default class Section extends React.Component {
-  render() {
-    const others = Object.keys(this.props).reduce((result, name) => {
-      if (/^data-/.test(name)) {
-        result[name] = this.props[name];
-      }
-
-      return result;
-    }, {});
-
-    return (
-      <div className={BOX} {...others}>
-        <div className="title">
-          <div className="icon">
-            {this.props.icon && <i className={`ms-Icon ms-Icon--${this.props.icon}`} aria-hidden="true" />}
-          </div>
-          <div className="text">{this.props.title}</div>
-        </div>
-        <div className="content-box">
-          <div className="content">{this.props.children}</div>
-        </div>
+const Section = ({ children, icon, title }) => {
+  return (
+    <div className={BOX}>
+      <div className="title">
+        <div className="icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+        <div className="text">{title}</div>
       </div>
-    );
-  }
-}
+      <div className="content-box">
+        <div className="content">{children}</div>
+      </div>
+    </div>
+  );
+};
+
+export default Section;

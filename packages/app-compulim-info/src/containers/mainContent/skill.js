@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import classNames from 'classnames';
-import React from 'react';
+import React, { useMemo } from 'react';
 
 const BOX = css({
   alignItems: 'center',
@@ -32,19 +32,23 @@ const BOX = css({
   }
 });
 
-export default class Skill extends React.Component {
-  render() {
-    const percentageStyle = css({
-      width: (this.props.star / 5) * 100 + '%'
-    });
+const Skill = ({ star, title }) => {
+  const percentageStyle = useMemo(
+    () =>
+      css({
+        width: (star / 5) * 100 + '%'
+      }),
+    [star]
+  );
 
-    return (
-      <div className={BOX}>
-        <div className="title">{this.props.title}</div>
-        <div className="bar">
-          <div className={classNames(percentageStyle, 'filler')} />
-        </div>
+  return (
+    <div className={BOX}>
+      <div className="title">{title}</div>
+      <div className="bar">
+        <div className={classNames(percentageStyle, 'filler')} />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Skill;

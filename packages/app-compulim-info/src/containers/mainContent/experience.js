@@ -84,36 +84,36 @@ const STYLE = css({
   }
 });
 
-export default class Experience extends React.Component {
-  render() {
-    return (
-      <li className={STYLE}>
-        <div className="clear-line" />
-        <div className="icon" />
-        {!!this.props.from &&
-          (this.props.to ? (
-            this.props.verticalDate ? (
-              <div className="date vertical">
-                {this.props.from}
-                <br />
-                &#x205E;
-                <br />
-                {this.props.to}
-              </div>
-            ) : (
-              <div className="date">
-                {this.props.from} &#x2012; {this.props.to}
-              </div>
-            )
+const Experience = ({ children, from, organization, post, to, verticalDate }) => {
+  return (
+    <li className={STYLE}>
+      <div className="clear-line" />
+      <div className="icon" />
+      {!!from &&
+        (to ? (
+          verticalDate ? (
+            <div className="date vertical">
+              {from}
+              <br />
+              &#x205E;
+              <br />
+              {to}
+            </div>
           ) : (
-            <div className={`date${this.props.verticalDate ? ' vertical' : ''}`}>{this.props.from}</div>
-          ))}
-        <div className="content">
-          <div className="organization">{this.props.organization}</div>
-          {this.props.post && <div className="post">{this.props.post}</div>}
-          {this.props.children && <div className="responsibilities">{this.props.children}</div>}
-        </div>
-      </li>
-    );
-  }
-}
+            <div className="date">
+              {from} &#x2012; {to}
+            </div>
+          )
+        ) : (
+          <div className={`date${verticalDate ? ' vertical' : ''}`}>{from}</div>
+        ))}
+      <div className="content">
+        <div className="organization">{organization}</div>
+        {!!post && <div className="post">{post}</div>}
+        {!!children && <div className="responsibilities">{children}</div>}
+      </div>
+    </li>
+  );
+};
+
+export default Experience;

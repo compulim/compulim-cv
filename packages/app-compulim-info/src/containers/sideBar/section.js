@@ -24,13 +24,13 @@ const BOX = css({
   }
 });
 
-export default class Section extends React.Component {
-  render() {
-    return (
-      <div className={BOX}>
-        <div className="title">{this.props.title}</div>
-        <div className="content">{this.props.children}</div>
-      </div>
-    );
-  }
-}
+const Section = ({ children, title }) => {
+  return (
+    <div className={BOX}>
+      <div className="title">{title}</div>
+      <div className="content">{children}</div>
+    </div>
+  );
+};
+
+export default Section;
