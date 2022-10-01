@@ -1,4 +1,5 @@
 import { css } from '@emotion/css';
+import classNames from 'classnames';
 import React from 'react';
 
 import Experience from './mainContent/experience';
@@ -11,58 +12,60 @@ import SkillColumn from './mainContent/skillColumn';
 const SHOW_MORE_PROJECTS = false;
 
 const BOX = css({
-  backgroundColor: 'White',
-  flex: 7,
-  paddingLeft: 40,
-  paddingRight: 60,
-  minHeight: '100%',
-
-  '& .skills': {
-    position: 'relative',
-
-    '& > .three-columns': {
-      display: 'flex',
-      paddingTop: 20,
-      width: '100%',
-
-      '& > .spacer': {
-        flex: 0.2
-      },
-
-      '& > .column': {
-        flex: 1
-      }
-    },
-
-    '& .icon': {
-      backgroundColor: 'White',
-      border: 'solid 2px Black',
-      borderRadius: 10,
-      height: 10,
-      left: -48,
-      position: 'absolute',
-      bottom: 18,
-      width: 10
-    },
-
-    '& .clear-line': {
-      backgroundColor: 'White',
-      height: 25,
-      left: -48,
-      position: 'absolute',
-      bottom: 0,
-      width: 14
-    }
+  '&.main-content': {
+    backgroundColor: 'White',
+    flex: 7,
+    paddingLeft: 40,
+    paddingRight: 60,
+    minHeight: '100%'
   },
 
-  '& > .puller': {
+  '& .main-content__skills': {
+    position: 'relative'
+  },
+
+  '& .main-content__skills .main-content__skills--three-columns': {
+    display: 'flex',
+    paddingTop: 20,
+    width: '100%'
+  },
+
+  '& .main-content__spacer': {
+    flex: 0.2
+  },
+
+  '& .main-content__column': {
+    flex: 1
+  },
+
+  '& .main-content__icon': {
+    backgroundColor: 'White',
+    border: 'solid 2px Black',
+    borderRadius: 10,
+    height: 10,
+    left: -48,
+    position: 'absolute',
+    bottom: 18,
+    width: 10
+  },
+
+  '& .main-content__clear-line': {
+    backgroundColor: 'White',
+    height: 25,
+    left: -48,
+    position: 'absolute',
+    bottom: 0,
+    width: 14
+  },
+
+  '& .main-content__puller': {
     pageBreakBefore: 'always'
   }
 });
 
 const MainContent = () => {
   return (
-    <div className={BOX}>
+    <div className={classNames('main-content', BOX)}>
       <PersonalTitle name="William Wong">
         <p>Full stack developer. Love coding. Enjoy self-learning, visualizing data, and realizing ideas.</p>
       </PersonalTitle>
@@ -386,9 +389,9 @@ const MainContent = () => {
         </ul>
       </Section>
       <Section icon="Repair" title="Skills and expertize">
-        <div className="skills">
-          <div className="three-columns">
-            <div className="column">
+        <div className="main-content__skills">
+          <div className="main-content__skills--three-columns">
+            <div className="main-content__column">
               <SkillColumn title="Frontend">
                 <Skill title="HTML" star="4" />
                 <Skill title="CSS" star="4" />
@@ -405,8 +408,8 @@ const MainContent = () => {
                 <Skill title="MongoDB" star="2" />
               </SkillColumn>
             </div>
-            <div className="spacer" />
-            <div className="column">
+            <div className="main-content__spacer" />
+            <div className="main-content__column">
               <SkillColumn title="Azure">
                 <Skill title="Bot Services" star="5" />
                 <Skill title="Web App" star="5" />
@@ -423,8 +426,8 @@ const MainContent = () => {
                 <Skill title="Accessibility" star="5" />
               </SkillColumn>
             </div>
-            <div className="spacer" />
-            <div className="column">
+            <div className="main-content__spacer" />
+            <div className="main-content__column">
               <SkillColumn title="Language">
                 <Skill title="JavaScript" star="5" />
                 <Skill title="C#" star="4" />
@@ -442,11 +445,11 @@ const MainContent = () => {
               </SkillColumn>
             </div>
           </div>
-          <div className="clear-line" />
-          <div className="icon" />
+          <div className="main-content__clear-line" />
+          <div className="main-content__icon" />
         </div>
       </Section>
-      <div className="puller" />
+      <div className="main-content__puller" />
     </div>
   );
 };

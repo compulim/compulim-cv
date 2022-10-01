@@ -1,4 +1,5 @@
 import { css } from '@emotion/css';
+import classNames from 'classnames';
 import React from 'react';
 
 import * as Styles from '../../styles';
@@ -6,51 +7,53 @@ import * as Styles from '../../styles';
 const ICON_SIZE = 40;
 
 const BOX = css({
-  marginBottom: 20,
-  paddingTop: 20,
+  '&.section': {
+    marginBottom: 20,
+    paddingTop: 20
+  },
 
-  '& > .title': {
+  '& .section__title': {
     alignItems: 'center',
     display: 'flex',
     fontFamily: Styles.SECTION_TITLE_FONT_FAMILY,
     fontSize: 24,
     fontWeight: 600,
-    letterSpacing: 5,
+    letterSpacing: 5
+  },
 
-    '& > .icon': {
-      backgroundColor: 'White',
-      border: '2px Solid Black',
-      borderRadius: ICON_SIZE,
-      display: 'flex',
-      height: ICON_SIZE,
-      justifyContent: 'center',
-      overflow: 'hidden',
-      textAlign: 'center',
-      width: ICON_SIZE,
+  '& .section__icon': {
+    backgroundColor: 'White',
+    border: '2px Solid Black',
+    borderRadius: ICON_SIZE,
+    display: 'flex',
+    height: ICON_SIZE,
+    justifyContent: 'center',
+    overflow: 'hidden',
+    textAlign: 'center',
+    width: ICON_SIZE,
 
-      '& > i': {
-        alignSelf: 'center',
-        fontSize: 30,
-        marginLeft: 5
-      }
-    },
-
-    '& > .text': {
-      borderBottom: 'solid 2px Black',
-      borderTop: 'solid 2px Transparent',
-      flex: 1,
-      marginLeft: 20,
-      padding: '10px 0',
-      textTransform: 'uppercase'
+    '& > i': {
+      alignSelf: 'center',
+      fontSize: 30,
+      marginLeft: 5
     }
   },
 
-  '& > .content-box': {
+  '& .section__text': {
+    borderBottom: 'solid 2px Black',
+    borderTop: 'solid 2px Transparent',
+    flex: 1,
+    marginLeft: 20,
+    padding: '10px 0',
+    textTransform: 'uppercase'
+  },
+
+  '& .section__content-box': {
     marginBottom: '1.5em',
     marginLeft: ICON_SIZE / 2 + 1,
     marginTop: -5,
 
-    '& > .content': {
+    '& .section__content': {
       borderLeft: 'solid 2px Black',
       paddingLeft: ICON_SIZE,
       paddingTop: 5,
@@ -66,13 +69,13 @@ const BOX = css({
 
 const Section = ({ children, icon, title }) => {
   return (
-    <div className={BOX}>
-      <div className="title">
-        <div className="icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
-        <div className="text">{title}</div>
+    <div className={classNames('section', BOX)}>
+      <div className="section__title">
+        <div className="section__icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+        <div className="section__text">{title}</div>
       </div>
-      <div className="content-box">
-        <div className="content">{children}</div>
+      <div className="section__content-box">
+        <div className="section__content">{children}</div>
       </div>
     </div>
   );

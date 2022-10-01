@@ -1,23 +1,26 @@
 import { css } from '@emotion/css';
+import classNames from 'classnames';
 import React from 'react';
 
 const PHOTO_SIZE = 176;
 
 const BOX = css({
-  border: 'solid 2px White',
-  borderRadius: PHOTO_SIZE,
-  margin: '50px 60px 30px',
-  position: 'relative',
-  height: PHOTO_SIZE,
-  width: PHOTO_SIZE,
+  '&.profile-picture': {
+    border: 'solid 2px White',
+    borderRadius: PHOTO_SIZE,
+    margin: '50px 60px 30px',
+    position: 'relative',
+    height: PHOTO_SIZE,
+    width: PHOTO_SIZE
+  },
 
-  '& > img': {
+  '& .profile-picture__image': {
     borderRadius: PHOTO_SIZE,
     height: PHOTO_SIZE,
     width: PHOTO_SIZE
   },
 
-  '& > .inner-shadow': {
+  '& .profile-picture__inner-shadow': {
     '@media screen': {
       boxShadow: 'inset 0 0 20px 5px rgba(0, 0, 0, .5)'
     },
@@ -33,9 +36,9 @@ const BOX = css({
 
 const ProfilePicture = () => {
   return (
-    <div className={BOX}>
-      <img alt="William Wong" src="img/profile6.jpg" />
-      <div className="inner-shadow" />
+    <div className={classNames('profile-picture', BOX)}>
+      <img alt="William Wong" className="profile-picture__image" src="img/profile6.jpg" />
+      <div className="profile-picture__inner-shadow" />
     </div>
   );
 };

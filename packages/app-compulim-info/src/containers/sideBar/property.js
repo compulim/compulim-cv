@@ -1,38 +1,41 @@
 import { css } from '@emotion/css';
+import classNames from 'classnames';
 import React from 'react';
 
 const ICON_SIZE = 30;
 
 const BOX = css({
-  display: 'flex',
-  marginBottom: 5,
-  paddingTop: 20,
-  pageBreakInside: 'avoid',
+  '&.property': {
+    display: 'flex',
+    marginBottom: 5,
+    paddingTop: 20,
+    pageBreakInside: 'avoid'
+  },
 
-  '& > .icon': {
+  '& .property__icon': {
     fontSize: ICON_SIZE,
     marginRight: 10,
     width: ICON_SIZE
   },
 
-  '& > .content-box': {
-    flex: 1,
+  '& .property__content-box': {
+    flex: 1
+  },
 
-    '& > .title': {
-      fontWeight: 500
-    },
+  '& .property__title': {
+    fontWeight: 500
+  },
 
-    '& > .content': {
+  '& .property__content': {
+    color: '#CCC',
+    fontWeight: 200,
+
+    '& a': {
       color: '#CCC',
-      fontWeight: 200,
+      textDecoration: 'none',
 
-      '& a': {
-        color: '#CCC',
-        textDecoration: 'none',
-
-        '&:hover': {
-          textDecoration: 'underline'
-        }
+      '&:hover': {
+        textDecoration: 'underline'
       }
     }
   }
@@ -40,11 +43,11 @@ const BOX = css({
 
 const Property = ({ children, icon, title }) => {
   return (
-    <div className={BOX}>
-      <div className="icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
-      <div className="content-box">
-        <div className="title">{title}</div>
-        <div className="content">{children}</div>
+    <div className={classNames('property', BOX)}>
+      <div className="property__icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+      <div className="property__content-box">
+        <div className="property__title">{title}</div>
+        <div className="property__content">{children}</div>
       </div>
     </div>
   );

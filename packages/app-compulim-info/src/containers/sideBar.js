@@ -1,4 +1,5 @@
 import { css } from '@emotion/css';
+import classNames from 'classnames';
 import React from 'react';
 
 import ProfilePicture from './sideBar/profilePicture';
@@ -6,16 +7,18 @@ import Property from './sideBar/property';
 import Section from './sideBar/section';
 
 const BOX = css({
-  backgroundColor: '#333',
-  color: 'White',
-  minHeight: '100%',
-  paddingBottom: 100,
-  width: 300
+  '&.side-bar': {
+    backgroundColor: '#333',
+    color: 'White',
+    minHeight: '100%',
+    paddingBottom: 100,
+    width: 300
+  }
 });
 
 const SideBar = () => {
   return (
-    <div className={BOX}>
+    <div className={classNames('side-bar', BOX)}>
       <ProfilePicture />
       <Section title="Info">
         <Property icon="MapPin" title="Address">
