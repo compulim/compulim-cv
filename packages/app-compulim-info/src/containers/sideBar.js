@@ -19,8 +19,6 @@ const SideBar = () => {
       <ProfilePicture />
       <Section title="Info">
         <Property icon="MapPin" title="Address">
-          16541 Redmond Way
-          <br />
           Redmond, WA 98052
         </Property>
         <Property icon="MapPin" title="Address">
@@ -28,13 +26,13 @@ const SideBar = () => {
           <br />
           Hong Kong
         </Property>
-        <Property icon="CellPhone" title="Cellphone">
-          <a href="tel:+852 9153 0922">+852 9153 0922</a>
+        {/* <Property icon="CellPhone" title="Cellphone">
+          <a href="tel:+852">+852</a>
           {false && <div>20:00 - 12:00 PST</div>}
-        </Property>
+        </Property> */}
         {false && (
           <Property icon="Clock" title="Timezone">
-            GMT+08 Hong Kong
+            GMT-08 PST
           </Property>
         )}
         <Property icon="Mail" title="Email">
