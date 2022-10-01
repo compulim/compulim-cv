@@ -7,19 +7,19 @@ export default class Project extends React.Component {
     let { subTitle } = this.props;
 
     if (/^https?:\/\//.test(subTitle)) {
-      subTitle = React.createElement('a', { href: subTitle, target: '_blank' }, subTitle );
+      subTitle = React.createElement('a', { href: subTitle, target: '_blank' }, subTitle);
     }
 
     return (
       <Experience
-        from        ={ this.props.from }
-        to          ={ this.props.to }
-        organization={ this.props.title }
-        post        ={ subTitle }
-        verticalDate={ true }
+        from={this.props.from}
+        to={this.props.to}
+        organization={this.props.title}
+        post={subTitle}
+        verticalDate={true}
       >
-        { this.props.children }
+        {this.props.children}
       </Experience>
     );
   }
-};
+}

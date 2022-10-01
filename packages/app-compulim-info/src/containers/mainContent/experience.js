@@ -1,33 +1,33 @@
-import { css } from 'glamor';
+import { css } from '@emotion/css';
 import React from 'react';
 
 const STYLE = css({
-  display        : 'flex',
-  marginBottom   : '1em',
-  marginLeft     : -48,
-  paddingLeft    : 48,
-  paddingTop     : 20,
+  display: 'flex',
+  marginBottom: '1em',
+  marginLeft: -48,
+  paddingLeft: 48,
+  paddingTop: 20,
   pageBreakInside: 'avoid',
-  position       : 'relative',
+  position: 'relative',
 
   '&:last-child > .clear-line': {
     backgroundColor: 'White',
-    height         : '100%',
-    position       : 'absolute',
-    left           : 0,
-    top            : 28,
-    width          : 20
+    height: '100%',
+    position: 'absolute',
+    left: 0,
+    top: 28,
+    width: 20
   },
 
   '& > .icon': {
     backgroundColor: 'white',
-    border         : 'solid 2px Black',
-    borderRadius   : 10,
-    height         : 10,
-    left           : 0,
-    position       : 'absolute',
-    top            : 23,
-    width          : 10
+    border: 'solid 2px Black',
+    borderRadius: 10,
+    height: 10,
+    left: 0,
+    position: 'absolute',
+    top: 23,
+    width: 10
   },
 
   '& > .date': {
@@ -64,8 +64,8 @@ const STYLE = css({
 
       '& > ul': {
         listStyleType: 'none',
-        marginTop    : '.4em',
-        paddingLeft  : 0,
+        marginTop: '.4em',
+        paddingLeft: 0,
 
         '& > li': {
           marginBottom: '.4em'
@@ -74,7 +74,7 @@ const STYLE = css({
     },
 
     '& a': {
-      color         : 'Black',
+      color: 'Black',
       textDecoration: 'none',
 
       '&:hover': {
@@ -87,46 +87,31 @@ const STYLE = css({
 export default class Experience extends React.Component {
   render() {
     return (
-      <li { ...STYLE }>
+      <li className={STYLE}>
         <div className="clear-line" />
         <div className="icon" />
-        {
-          !!this.props.from && (
-            this.props.to ?
-              this.props.verticalDate ?
-                <div className="date vertical">
-                  { this.props.from }
-                  <br />
-                  &#x205E;
-                  <br />
-                  { this.props.to }
-                </div>
-              :
-                <div className="date">
-                  { this.props.from } &#x2012; { this.props.to }
-                </div>
-            :
-              <div className={ `date${ this.props.verticalDate ? ' vertical' : ''}` }>
-                { this.props.from }
+        {!!this.props.from &&
+          (this.props.to ? (
+            this.props.verticalDate ? (
+              <div className="date vertical">
+                {this.props.from}
+                <br />
+                &#x205E;
+                <br />
+                {this.props.to}
               </div>
-          )
-        }
+            ) : (
+              <div className="date">
+                {this.props.from} &#x2012; {this.props.to}
+              </div>
+            )
+          ) : (
+            <div className={`date${this.props.verticalDate ? ' vertical' : ''}`}>{this.props.from}</div>
+          ))}
         <div className="content">
-          <div className="organization">
-            { this.props.organization }
-          </div>
-          {
-            this.props.post &&
-              <div className="post">
-                { this.props.post }
-              </div>
-          }
-          {
-            this.props.children &&
-              <div className="responsibilities">
-                { this.props.children }
-              </div>
-          }
+          <div className="organization">{this.props.organization}</div>
+          {this.props.post && <div className="post">{this.props.post}</div>}
+          {this.props.children && <div className="responsibilities">{this.props.children}</div>}
         </div>
       </li>
     );

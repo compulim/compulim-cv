@@ -1,25 +1,11 @@
 {
-  "name": "compulim-info",
-  "version": "1.0.0",
-  "description": "Website for compulim.info",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/compulim/compulim-info.git"
-  },
-  "keywords": [
-    "compulim"
-  ],
-  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/compulim/compulim-info/issues"
-  },
-  "homepage": "https://github.com/compulim/compulim-info#readme",
+  "name": "root",
+  "version": "0.0.0-0",
+  "private": true,
   "devDependencies": {
-    "lerna": "^2.9.0"
+    "lerna": "^5.5.4"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "write-docker-tag": "node scripts/writeDockerTag.js"
+    "prepare": "lerna bootstrap"
   }
 }

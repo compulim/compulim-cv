@@ -1,5 +1,5 @@
-import { css } from 'glamor';
-import React   from 'react';
+import { css } from '@emotion/css';
+import React from 'react';
 
 import Badge from './Badge';
 
@@ -8,7 +8,7 @@ const HAS_STAR_CSS = css({
 });
 
 const HYPERLINK_CSS = css({
-  color         : 'White',
+  color: 'White',
   textDecoration: 'none'
 });
 
@@ -18,33 +18,21 @@ export default class GitHubnumStarss extends React.Component {
 
     this.state = {
       numStars: null
-    }
+    };
   }
 
   componentWillMount() {
-    const {
-      owner,
-      name
-    } = this.props;
+    const { owner, name } = this.props;
 
     this.fetchStars(owner, name);
   }
 
   componentWillReceiveProps(nextProps) {
-    const {
-      owner,
-      name
-    } = this;
+    const { owner, name } = this;
 
-    const {
-      owner: nextOwner,
-      name: nextName
-    } = nextProps;
+    const { owner: nextOwner, name: nextName } = nextProps;
 
-    if (
-      owner !== nextOwner
-      || name !== nextName
-    ) {
+    if (owner !== nextOwner || name !== nextName) {
       this.fetchStars(nextOwner, nextName);
     }
   }
@@ -54,7 +42,7 @@ export default class GitHubnumStarss extends React.Component {
       return;
     }
 
-    const url = new URL(`https://api.github.com/repos/${ encodeURI(owner) }/${ encodeURI(name) }/stargazers`);
+    const url = new URL(`https://api.github.com/repos/${encodeURI(owner)}/${encodeURI(name)}/stargazers`);
     const githubAccessToken = localStorage.getItem('GITHUB_ACCESS_TOKEN');
 
     if (githubAccessToken) {
@@ -77,18 +65,19 @@ export default class GitHubnumStarss extends React.Component {
     const { props, state } = this;
 
     return (
-      typeof state.numStars === 'number' &&
-        <Badge className={ state.numStars && HAS_STAR_CSS }>
+      typeof state.numStars === 'number' && (
+        <Badge className={state.numStars && HAS_STAR_CSS}>
           {
             <a
-              className={ HYPERLINK_CSS }
-              href={ `https://github.com/${ encodeURI(props.owner) }/${ encodeURI(props.name) }/stargazers` }
+              className={HYPERLINK_CSS}
+              href={`https://github.com/${encodeURI(props.owner)}/${encodeURI(props.name)}/stargazers`}
               target="_blank"
             >
-              { state.numStars || 'No' } star{ state.numStars !== 1 && 's' }
+              {state.numStars || 'No'} star{state.numStars !== 1 && 's'}
             </a>
           }
         </Badge>
+      )
     );
   }
 }

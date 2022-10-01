@@ -1,4 +1,4 @@
-import { css } from 'glamor';
+import { css } from '@emotion/css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -26,10 +26,11 @@ export default function main() {
   }
 
   ReactDOM.render(
-    <div className={ ROOT_CSS }>
+    <div className={ROOT_CSS}>
       <h1>Packages</h1>
       <p>
-        <a href="//auth.compulim.info/github/authorize">Sign into GitHub</a> if you see <a href={ rateLimitURL.toString() }>API rate limiting</a>.
+        <a href="//auth.compulim.info/github/authorize">Sign into GitHub</a> if you see{' '}
+        <a href={rateLimitURL.toString()}>API rate limiting</a>.
       </p>
       <Category name="General">
         <NPMPackage name="auto-reset-event" />

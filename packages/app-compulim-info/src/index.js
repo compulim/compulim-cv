@@ -1,8 +1,8 @@
 import packagesMain from './packages/index';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import resumeMain from './resume';
 
-registerServiceWorker();
+// registerServiceWorker();
 
 const { location: { pathname, search } } = window;
 const searchParams = new URLSearchParams(search);
@@ -17,8 +17,8 @@ if (
   resumeMain();
 }
 
-const githubAccessToken = searchParams.get('github_access_token');
+// const githubAccessToken = searchParams.get('github_access_token');
 
-if (githubAccessToken) {
-  localStorage.setItem('GITHUB_ACCESS_TOKEN', githubAccessToken);
-}
+// if (githubAccessToken) {
+//   localStorage.setItem('GITHUB_ACCESS_TOKEN', githubAccessToken);
+// }

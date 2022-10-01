@@ -1,29 +1,29 @@
-import { css } from 'glamor';
+import { css } from '@emotion/css';
 import React from 'react';
 
 const ICON_SIZE = 30;
 
 const BOX = css({
-  display        : 'flex',
-  marginBottom   : 5,
-  paddingTop     : 20,
+  display: 'flex',
+  marginBottom: 5,
+  paddingTop: 20,
   pageBreakInside: 'avoid',
 
   '& > .icon': {
-    fontSize   : ICON_SIZE,
+    fontSize: ICON_SIZE,
     marginRight: 10,
-    width      : ICON_SIZE
+    width: ICON_SIZE
   },
 
   '& > .content-box': {
     flex: 1,
 
     '& > .title': {
-      fontWeight  : 500,
+      fontWeight: 500
     },
 
     '& > .content': {
-      color     : '#CCC',
+      color: '#CCC',
       fontWeight: 200,
 
       '& a': {
@@ -41,20 +41,13 @@ const BOX = css({
 export default class Property extends React.Component {
   render() {
     return (
-      <div { ...BOX }>
+      <div className={BOX}>
         <div className="icon">
-          {
-            this.props.icon &&
-              <i className={ `ms-Icon ms-Icon--${ this.props.icon }` } aria-hidden="true" />
-          }
+          {this.props.icon && <i className={`ms-Icon ms-Icon--${this.props.icon}`} aria-hidden="true" />}
         </div>
         <div className="content-box">
-          <div className="title">
-            { this.props.title }
-          </div>
-          <div className="content">
-            { this.props.children }
-          </div>
+          <div className="title">{this.props.title}</div>
+          <div className="content">{this.props.children}</div>
         </div>
       </div>
     );
