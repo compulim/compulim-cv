@@ -11,7 +11,7 @@ import SkillColumn from './mainContent/skillColumn';
 
 const SHOW_MORE_PROJECTS = false;
 
-const BOX = css({
+const STYLE = css({
   '&.main-content': {
     backgroundColor: 'White',
     flex: 7,
@@ -20,25 +20,25 @@ const BOX = css({
     minHeight: '100%'
   },
 
-  '& .main-content__skills': {
+  '.main-content__skills': {
     position: 'relative'
   },
 
-  '& .main-content__skills .main-content__skills--three-columns': {
+  '.main-content__skills .main-content__skills--three-columns': {
     display: 'flex',
     paddingTop: 20,
     width: '100%'
   },
 
-  '& .main-content__spacer': {
+  '.main-content__spacer': {
     flex: 0.2
   },
 
-  '& .main-content__column': {
+  '.main-content__column': {
     flex: 1
   },
 
-  '& .main-content__icon': {
+  '.main-content__icon': {
     backgroundColor: 'White',
     border: 'solid 2px Black',
     borderRadius: 10,
@@ -49,7 +49,7 @@ const BOX = css({
     width: 10
   },
 
-  '& .main-content__clear-line': {
+  '.main-content__clear-line': {
     backgroundColor: 'White',
     height: 25,
     left: -48,
@@ -58,18 +58,31 @@ const BOX = css({
     width: 14
   },
 
-  '& .main-content__puller': {
+  '.main-content__puller': {
     pageBreakBefore: 'always'
+  },
+
+  '.main-content__work-experience': {
+    pageBreakInside: 'avoid',
+    paddingTop: 0
+  },
+
+  '.main-content__project-highlights': {
+    pageBreakBefore: 'always'
+  },
+
+  '.main-content__education': {
+    pageBreakInside: 'avoid'
   }
 });
 
 const MainContent = () => {
   return (
-    <div className={classNames('main-content', BOX)}>
+    <div className={classNames('main-content', STYLE)}>
       <PersonalTitle name="William Wong">
         <p>Full stack developer. Love coding. Enjoy self-learning, visualizing data, and realizing ideas.</p>
       </PersonalTitle>
-      <Section icon="Work" title="Work experience" className={css({ paddingTop: 0, pageBreakInside: 'avoid' })}>
+      <Section className="main-content__work-experience" icon="Work" title="Work experience">
         <ul>
           <Experience from="Nov 2011" to="Apr 2017" organization="C&amp;R Holdings Limited" post="Solution Architect">
             Technical leader, managed developers, web/mobile development, Azure go-to person, internal/external trainer.
@@ -138,7 +151,7 @@ const MainContent = () => {
           </Project>
         </ul>
       </Section>
-      <Section icon="FavoriteList" title="Project highlights" className={css({ pageBreakBefore: 'always' })}>
+      <Section icon="FavoriteList" title="Project highlights" className="main-content__project-highlights">
         <ul>
           <Project from="Feb 2016" to="Present" title="Public speaking and meetups">
             <p>
@@ -367,7 +380,7 @@ const MainContent = () => {
           )}
         </ul>
       </Section>
-      <Section icon="Glasses" title="Education" className={css({ pageBreakInside: 'avoid' })}>
+      <Section className="main-content__education" icon="Glasses" title="Education">
         <ul>
           <Experience
             from="Sep 2002"

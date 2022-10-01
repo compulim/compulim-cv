@@ -6,13 +6,13 @@ import * as Styles from '../../styles';
 
 const ICON_SIZE = 40;
 
-const BOX = css({
+const STYLE = css({
   '&.section': {
     marginBottom: 20,
     paddingTop: 20
   },
 
-  '& .section__title': {
+  '.section__title': {
     alignItems: 'center',
     display: 'flex',
     fontFamily: Styles.SECTION_TITLE_FONT_FAMILY,
@@ -21,7 +21,7 @@ const BOX = css({
     letterSpacing: 5
   },
 
-  '& .section__icon': {
+  '.section__icon': {
     backgroundColor: 'White',
     border: '2px Solid Black',
     borderRadius: ICON_SIZE,
@@ -39,7 +39,7 @@ const BOX = css({
     }
   },
 
-  '& .section__text': {
+  '.section__text': {
     borderBottom: 'solid 2px Black',
     borderTop: 'solid 2px Transparent',
     flex: 1,
@@ -48,28 +48,28 @@ const BOX = css({
     textTransform: 'uppercase'
   },
 
-  '& .section__content-box': {
+  '.section__content-box': {
     marginBottom: '1.5em',
     marginLeft: ICON_SIZE / 2 + 1,
-    marginTop: -5,
+    marginTop: -5
+  },
 
-    '& .section__content': {
-      borderLeft: 'solid 2px Black',
-      paddingLeft: ICON_SIZE,
-      paddingTop: 5,
+  '.section__content': {
+    borderLeft: 'solid 2px Black',
+    paddingLeft: ICON_SIZE,
+    paddingTop: 5,
 
-      '& > ul': {
-        marginTop: 0,
-        paddingLeft: 0,
-        listStyleType: 'none'
-      }
+    '& > ul': {
+      marginTop: 0,
+      paddingLeft: 0,
+      listStyleType: 'none'
     }
   }
 });
 
 const Section = ({ children, icon, title }) => {
   return (
-    <div className={classNames('section', BOX)}>
+    <div className={classNames('section', STYLE)}>
       <div className="section__title">
         <div className="section__icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
         <div className="section__text">{title}</div>

@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React, { useMemo } from 'react';
 
-const BOX = css({
+const STYLE = css({
   '&.skill': {
     alignItems: 'center',
     display: 'flex',
@@ -10,13 +10,13 @@ const BOX = css({
     pageBreakInside: 'avoid'
   },
 
-  '& .skill__title': {
+  '.skill__title': {
     alignSelf: 'flex-start',
     flex: 4,
     lineHeight: '80%'
   },
 
-  '& .skill__bar': {
+  '.skill__bar': {
     alignSelf: 'flex-start',
     backgroundColor: '#DDD',
     flex: 3,
@@ -25,7 +25,7 @@ const BOX = css({
     position: 'relative'
   },
 
-  '& .skill__filler': {
+  '.skill__filler': {
     backgroundColor: '#777',
     height: '100%',
     left: 0,
@@ -44,7 +44,7 @@ const Skill = ({ star, title }) => {
   );
 
   return (
-    <div className={classNames('skill', BOX)}>
+    <div className={classNames('skill', STYLE)}>
       <div className="skill__title">{title}</div>
       <div className="skill__bar">
         <div className={classNames('skill__filler', percentageStyle)} />

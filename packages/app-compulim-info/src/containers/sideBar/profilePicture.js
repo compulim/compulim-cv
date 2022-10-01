@@ -4,7 +4,7 @@ import React from 'react';
 
 const PHOTO_SIZE = 176;
 
-const BOX = css({
+const STYLE = css({
   '&.profile-picture': {
     border: 'solid 2px White',
     borderRadius: PHOTO_SIZE,
@@ -14,13 +14,13 @@ const BOX = css({
     width: PHOTO_SIZE
   },
 
-  '& .profile-picture__image': {
+  '.profile-picture__image': {
     borderRadius: PHOTO_SIZE,
     height: PHOTO_SIZE,
     width: PHOTO_SIZE
   },
 
-  '& .profile-picture__inner-shadow': {
+  '.profile-picture__inner-shadow': {
     '@media screen': {
       boxShadow: 'inset 0 0 20px 5px rgba(0, 0, 0, .5)'
     },
@@ -36,7 +36,7 @@ const BOX = css({
 
 const ProfilePicture = () => {
   return (
-    <div className={classNames('profile-picture', BOX)}>
+    <div className={classNames('profile-picture', STYLE)}>
       <img alt="William Wong" className="profile-picture__image" src="img/profile6.jpg" />
       <div className="profile-picture__inner-shadow" />
     </div>

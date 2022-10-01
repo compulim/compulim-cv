@@ -2,15 +2,15 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import * as Styles from '../../styles';
+import { TITLE_FONT_FAMILY } from '../../styles';
 
-const BOX = css({
+const STYLE = css({
   '&.personal-title': {
     marginBottom: 40
   },
 
-  '& .personal-title__name': {
-    fontFamily: Styles.TITLE_FONT_FAMILY,
+  '.personal-title__name': {
+    fontFamily: TITLE_FONT_FAMILY,
     fontSize: 60,
     letterSpacing: '.05em',
     marginBottom: 0,
@@ -21,7 +21,7 @@ const BOX = css({
 
 const PersonalTitle = ({ children, name }) => {
   return (
-    <div className={classNames('personal-title', BOX)}>
+    <div className={classNames('personal-title', STYLE)}>
       <h1 className="personal-title__name">{name}</h1>
       <div className="personal_title__summary">{children}</div>
     </div>

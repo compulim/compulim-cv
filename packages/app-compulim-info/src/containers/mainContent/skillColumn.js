@@ -8,7 +8,7 @@ const STYLE = css({
     pageBreakInside: 'avoid'
   },
 
-  '& .skill-column__title': {
+  '.skill-column__title': {
     fontSize: 16,
     fontWeight: 600,
     marginBottom: '1em',

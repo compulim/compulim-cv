@@ -6,7 +6,7 @@ import ProfilePicture from './sideBar/profilePicture';
 import Property from './sideBar/property';
 import Section from './sideBar/section';
 
-const BOX = css({
+const STYLE = css({
   '&.side-bar': {
     backgroundColor: '#333',
     color: 'White',
@@ -18,16 +18,11 @@ const BOX = css({
 
 const SideBar = () => {
   return (
-    <div className={classNames('side-bar', BOX)}>
+    <div className={classNames('side-bar', STYLE)}>
       <ProfilePicture />
       <Section title="Info">
         <Property icon="MapPin" title="Address">
           Redmond, WA 98052
-        </Property>
-        <Property icon="MapPin" title="Address">
-          Tuen Mun, N.T.
-          <br />
-          Hong Kong
         </Property>
         {/* <Property icon="CellPhone" title="Cellphone">
           <a href="tel:+852">+852</a>

@@ -4,7 +4,7 @@ import React from 'react';
 
 const ICON_SIZE = 30;
 
-const BOX = css({
+const STYLE = css({
   '&.property': {
     display: 'flex',
     marginBottom: 5,
@@ -12,21 +12,21 @@ const BOX = css({
     pageBreakInside: 'avoid'
   },
 
-  '& .property__icon': {
+  '.property__icon': {
     fontSize: ICON_SIZE,
     marginRight: 10,
     width: ICON_SIZE
   },
 
-  '& .property__content-box': {
+  '.property__content-box': {
     flex: 1
   },
 
-  '& .property__title': {
+  '.property__title': {
     fontWeight: 500
   },
 
-  '& .property__content': {
+  '.property__content': {
     color: '#CCC',
     fontWeight: 200,
 
@@ -43,7 +43,7 @@ const BOX = css({
 
 const Property = ({ children, icon, title }) => {
   return (
-    <div className={classNames('property', BOX)}>
+    <div className={classNames('property', STYLE)}>
       <div className="property__icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
       <div className="property__content-box">
         <div className="property__title">{title}</div>
