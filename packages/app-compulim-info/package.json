@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/compulim/compulim-info/issues"
   },
-  "homepage": "https://compulim.github.io/compulim-info",
+  "homepage": "https://compulim.info",
   "private": true,
   "browserslist": {
     "production": [
