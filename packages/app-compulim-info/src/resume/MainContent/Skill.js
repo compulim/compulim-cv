@@ -35,13 +35,7 @@ const STYLE = css({
 });
 
 const Skill = ({ star, title }) => {
-  const percentageStyle = useMemo(
-    () =>
-      css({
-        width: (star / 5) * 100 + '%'
-      }),
-    [star]
-  );
+  const percentageStyle = useMemo(() => css({ width: (star / 5) * 100 + '%' }), [star]);
 
   return (
     <div className={classNames('skill', STYLE)}>

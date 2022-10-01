@@ -64,18 +64,16 @@ const STYLE = css({
   }
 });
 
-const Section = ({ children, icon, title }) => {
-  return (
-    <div className={classNames('section', STYLE)}>
-      <div className="section__title">
-        <div className="section__icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
-        <div className="section__text">{title}</div>
-      </div>
-      <div className="section__content-box">
-        <div className="section__content">{children}</div>
-      </div>
+const Section = ({ children, icon, title }) => (
+  <div className={classNames('section', STYLE)}>
+    <div className="section__title">
+      <div className="section__icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+      <div className="section__text">{title}</div>
     </div>
-  );
-};
+    <div className="section__content-box">
+      <div className="section__content">{children}</div>
+    </div>
+  </div>
+);
 
 export default Section;

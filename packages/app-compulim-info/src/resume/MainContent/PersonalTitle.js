@@ -17,13 +17,11 @@ const STYLE = css({
   }
 });
 
-const PersonalTitle = ({ children, name }) => {
-  return (
-    <div className={classNames('personal-title', STYLE)}>
-      <h1 className="personal-title__name">{name}</h1>
-      <div className="personal_title__summary">{children}</div>
-    </div>
-  );
-};
+const PersonalTitle = ({ children, name }) => (
+  <div className={classNames('personal-title', STYLE)}>
+    <h1 className="personal-title__name">{name}</h1>
+    <div className="personal_title__summary">{children}</div>
+  </div>
+);
 
 export default PersonalTitle;

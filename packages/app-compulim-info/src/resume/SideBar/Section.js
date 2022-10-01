@@ -25,13 +25,11 @@ const STYLE = css({
   }
 });
 
-const Section = ({ children, title }) => {
-  return (
-    <div className={classNames('side-bar-section', STYLE)}>
-      <div className="side-bar-section__title">{title}</div>
-      <div className="side-bar-section__content">{children}</div>
-    </div>
-  );
-};
+const Section = ({ children, title }) => (
+  <div className={classNames('side-bar-section', STYLE)}>
+    <div className="side-bar-section__title">{title}</div>
+    <div className="side-bar-section__content">{children}</div>
+  </div>
+);
 
 export default Section;

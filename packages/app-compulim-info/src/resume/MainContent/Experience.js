@@ -68,48 +68,37 @@ const STYLE = css({
         marginBottom: '.4em'
       }
     }
-  },
-
-  '.experience__content a': {
-    color: 'Black',
-    textDecoration: 'none',
-
-    '&:hover': {
-      textDecoration: 'underline'
-    }
   }
 });
 
-const Experience = ({ children, from, organization, post, to, verticalDate }) => {
-  return (
-    <li className={classNames('experience', STYLE)}>
-      <div className="experience__clear-line" />
-      <div className="experience__icon" />
-      {!!from &&
-        (to ? (
-          verticalDate ? (
-            <div className="experience__date experience__date--vertical">
-              {from}
-              <br />
-              &#x205E;
-              <br />
-              {to}
-            </div>
-          ) : (
-            <div className="experience__date">
-              {from} &#x2012; {to}
-            </div>
-          )
+const Experience = ({ children, from, organization, post, to, verticalDate }) => (
+  <li className={classNames('experience', STYLE)}>
+    <div className="experience__clear-line" />
+    <div className="experience__icon" />
+    {!!from &&
+      (to ? (
+        verticalDate ? (
+          <div className="experience__date experience__date--vertical">
+            {from}
+            <br />
+            &#x205E;
+            <br />
+            {to}
+          </div>
         ) : (
-          <div className={classNames('experience__date', { 'experience__date--vertical': verticalDate })}>{from}</div>
-        ))}
-      <div className="experience__content">
-        <div className="experience__organization">{organization}</div>
-        {!!post && <div className="experience__post">{post}</div>}
-        {!!children && <div className="experience__responsibilities">{children}</div>}
-      </div>
-    </li>
-  );
-};
+          <div className="experience__date">
+            {from} &#x2012; {to}
+          </div>
+        )
+      ) : (
+        <div className={classNames('experience__date', { 'experience__date--vertical': verticalDate })}>{from}</div>
+      ))}
+    <div className="experience__content">
+      <div className="experience__organization">{organization}</div>
+      {!!post && <div className="experience__post">{post}</div>}
+      {!!children && <div className="experience__responsibilities">{children}</div>}
+    </div>
+  </li>
+);
 
 export default Experience;

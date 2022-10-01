@@ -28,28 +28,17 @@ const STYLE = css({
   '.property__content': {
     color: '#CCC',
     fontWeight: 200,
-
-    '& a': {
-      color: '#CCC',
-      textDecoration: 'none',
-
-      '&:hover': {
-        textDecoration: 'underline'
-      }
-    }
   }
 });
 
-const Property = ({ children, icon, title }) => {
-  return (
-    <div className={classNames('property', STYLE)}>
-      <div className="property__icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
-      <div className="property__content-box">
-        <div className="property__title">{title}</div>
-        <div className="property__content">{children}</div>
-      </div>
+const Property = ({ children, icon, title }) => (
+  <div className={classNames('property', STYLE)}>
+    <div className="property__icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+    <div className="property__content-box">
+      <div className="property__title">{title}</div>
+      <div className="property__content">{children}</div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Property;

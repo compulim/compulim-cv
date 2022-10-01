@@ -20,13 +20,11 @@ const STYLE = css({
   }
 });
 
-const SkillColumn = ({ children, title }) => {
-  return (
-    <div className={classNames('skill-column', STYLE)}>
-      <h1 className="skill-column__title">{title}</h1>
-      {children}
-    </div>
-  );
-};
+const SkillColumn = ({ children, title }) => (
+  <div className={classNames('skill-column', STYLE)}>
+    <h1 className="skill-column__title">{title}</h1>
+    {children}
+  </div>
+);
 
 export default SkillColumn;

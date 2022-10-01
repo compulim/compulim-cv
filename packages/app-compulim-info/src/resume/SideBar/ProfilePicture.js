@@ -33,13 +33,11 @@ const STYLE = css({
   }
 });
 
-const ProfilePicture = () => {
-  return (
-    <div className={classNames('profile-picture', STYLE)}>
-      <img alt="William Wong" className="profile-picture__image" src="img/profile6.jpg" />
-      <div className="profile-picture__inner-shadow" />
-    </div>
-  );
-};
+const ProfilePicture = () => (
+  <div className={classNames('profile-picture', STYLE)}>
+    <img alt="William Wong" className="profile-picture__image" src="img/profile6.jpg" />
+    <div className="profile-picture__inner-shadow" />
+  </div>
+);
 
 export default ProfilePicture;
