@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import ProfilePicture from './sideBar/profilePicture';
-import Property from './sideBar/property';
-import Section from './sideBar/section';
+import ProfilePicture from './SideBar/ProfilePicture';
+import Property from './SideBar/Property';
+import Section from './SideBar/Section';
 
 const STYLE = css({
   '&.side-bar': {

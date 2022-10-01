@@ -1,8 +1,5 @@
 import packagesMain from './packages/index';
-// import registerServiceWorker from './registerServiceWorker';
-import resumeMain from './resume';
-
-// registerServiceWorker();
+import renderResume from './resume/renderResume';
 
 const { location: { pathname, search } } = window;
 const searchParams = new URLSearchParams(search);
@@ -14,7 +11,7 @@ if (
 ) {
   packagesMain();
 } else {
-  resumeMain();
+  renderResume();
 }
 
 // const githubAccessToken = searchParams.get('github_access_token');

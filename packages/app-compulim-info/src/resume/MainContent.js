@@ -2,12 +2,12 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import Experience from './mainContent/experience';
-import PersonalTitle from './mainContent/personalTitle';
-import Project from './mainContent/project';
-import Section from './mainContent/section';
-import Skill from './mainContent/skill';
-import SkillColumn from './mainContent/skillColumn';
+import Experience from './MainContent/Experience';
+import PersonalTitle from './MainContent/PersonalTitle';
+import Project from './MainContent/Project';
+import Section from './MainContent/Section';
+import Skill from './MainContent/Skill';
+import SkillColumn from './MainContent/SkillColumn';
 
 const SHOW_MORE_PROJECTS = false;
 

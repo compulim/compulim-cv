@@ -2,15 +2,13 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import { TITLE_FONT_FAMILY } from '../../styles';
-
 const STYLE = css({
   '&.personal-title': {
     marginBottom: 40
   },
 
   '.personal-title__name': {
-    fontFamily: TITLE_FONT_FAMILY,
+    fontFamily: 'var(--title-font-family)',
     fontSize: 60,
     letterSpacing: '.05em',
     marginBottom: 0,

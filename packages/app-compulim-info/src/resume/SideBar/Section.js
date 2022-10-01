@@ -2,8 +2,6 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import { SECTION_TITLE_FONT_FAMILY } from '../../styles';
-
 const STYLE = css({
   '&.side-bar-section': {
     marginBottom: 50,
@@ -14,7 +12,7 @@ const STYLE = css({
 
   '.side-bar-section__title': {
     borderBottom: 'solid 2px White',
-    fontFamily: SECTION_TITLE_FONT_FAMILY,
+    fontFamily: 'var(--section-title-font-family)',
     fontSize: 20,
     letterSpacing: 5,
     paddingBottom: 10,

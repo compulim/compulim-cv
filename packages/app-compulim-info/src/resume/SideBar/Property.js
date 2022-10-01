@@ -2,10 +2,9 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-const ICON_SIZE = 30;
-
 const STYLE = css({
   '&.property': {
+    '--icon-size': '30px',
     display: 'flex',
     marginBottom: 5,
     paddingTop: 20,
@@ -13,9 +12,9 @@ const STYLE = css({
   },
 
   '.property__icon': {
-    fontSize: ICON_SIZE,
+    fontSize: 'var(--icon-size)',
     marginRight: 10,
-    width: ICON_SIZE
+    width: 'var(--icon-size)'
   },
 
   '.property__content-box': {

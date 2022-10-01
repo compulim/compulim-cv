@@ -2,22 +2,21 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-const PHOTO_SIZE = 176;
-
 const STYLE = css({
   '&.profile-picture': {
+    '--profile-picture-size': '176px',
     border: 'solid 2px White',
-    borderRadius: PHOTO_SIZE,
+    borderRadius: 'var(--profile-picture-size)',
     margin: '50px 60px 30px',
     position: 'relative',
-    height: PHOTO_SIZE,
-    width: PHOTO_SIZE
+    height: 'var(--profile-picture-size)',
+    width: 'var(--profile-picture-size)'
   },
 
   '.profile-picture__image': {
-    borderRadius: PHOTO_SIZE,
-    height: PHOTO_SIZE,
-    width: PHOTO_SIZE
+    borderRadius: 'var(--profile-picture-size)',
+    height: 'var(--profile-picture-size)',
+    width: 'var(--profile-picture-size)'
   },
 
   '.profile-picture__inner-shadow': {
@@ -25,12 +24,12 @@ const STYLE = css({
       boxShadow: 'inset 0 0 20px 5px rgba(0, 0, 0, .5)'
     },
 
-    borderRadius: PHOTO_SIZE,
-    height: PHOTO_SIZE,
+    borderRadius: 'var(--profile-picture-size)',
+    height: 'var(--profile-picture-size)',
     left: 0,
     position: 'absolute',
     top: 0,
-    width: PHOTO_SIZE
+    width: 'var(--profile-picture-size)'
   }
 });
 

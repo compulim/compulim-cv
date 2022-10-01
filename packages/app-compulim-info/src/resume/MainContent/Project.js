@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Experience from './experience';
+import Experience from './Experience';
 
 const Project = ({ children, from, subTitle, title, to }) => {
   if (/^https?:\/\//.test(subTitle)) {

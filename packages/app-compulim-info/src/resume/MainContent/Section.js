@@ -2,12 +2,9 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
-import * as Styles from '../../styles';
-
-const ICON_SIZE = 40;
-
 const STYLE = css({
   '&.section': {
+    '--icon-size': '40px',
     marginBottom: 20,
     paddingTop: 20
   },
@@ -15,7 +12,7 @@ const STYLE = css({
   '.section__title': {
     alignItems: 'center',
     display: 'flex',
-    fontFamily: Styles.SECTION_TITLE_FONT_FAMILY,
+    fontFamily: 'var(--section-title-font-family)',
     fontSize: 24,
     fontWeight: 600,
     letterSpacing: 5
@@ -24,13 +21,13 @@ const STYLE = css({
   '.section__icon': {
     backgroundColor: 'White',
     border: '2px Solid Black',
-    borderRadius: ICON_SIZE,
+    borderRadius: 'var(--icon-size)',
     display: 'flex',
-    height: ICON_SIZE,
+    height: 'var(--icon-size)',
     justifyContent: 'center',
     overflow: 'hidden',
     textAlign: 'center',
-    width: ICON_SIZE,
+    width: 'var(--icon-size)',
 
     '& > i': {
       alignSelf: 'center',
@@ -50,13 +47,13 @@ const STYLE = css({
 
   '.section__content-box': {
     marginBottom: '1.5em',
-    marginLeft: ICON_SIZE / 2 + 1,
+    marginLeft: 'calc(var(--icon-size) / 2 + 1px)',
     marginTop: -5
   },
 
   '.section__content': {
     borderLeft: 'solid 2px Black',
-    paddingLeft: ICON_SIZE,
+    paddingLeft: 'var(--icon-size)',
     paddingTop: 5,
 
     '& > ul': {
