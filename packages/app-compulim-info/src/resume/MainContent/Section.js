@@ -2,6 +2,8 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
+import FluentIcon from '../common/FluentIcon';
+
 const STYLE = css({
   '&.section': {
     '--icon-size': '40px',
@@ -67,7 +69,9 @@ const STYLE = css({
 const Section = ({ children, icon, title }) => (
   <div className={classNames('section', STYLE)}>
     <div className="section__title">
-      <div className="section__icon">{icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+      <div className="section__icon">
+        <FluentIcon icon={icon} />
+      </div>
       <div className="section__text">{title}</div>
     </div>
     <div className="section__content-box">

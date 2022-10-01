@@ -2,6 +2,8 @@ import { css } from '@emotion/css';
 import classNames from 'classnames';
 import React from 'react';
 
+import FluentIcon from '../common/FluentIcon';
+
 const STYLE = css({
   '&.property': {
     '--icon-size': '30px',
@@ -27,13 +29,15 @@ const STYLE = css({
 
   '.property__content': {
     color: '#CCC',
-    fontWeight: 200,
+    fontWeight: 200
   }
 });
 
 const Property = ({ children, icon, title }) => (
   <div className={classNames('property', STYLE)}>
-    <div className="property__icon">{!!icon && <i className={`ms-Icon ms-Icon--${icon}`} aria-hidden="true" />}</div>
+    <div className="property__icon">
+      <FluentIcon icon={icon} />
+    </div>
     <div className="property__content-box">
       <div className="property__title">{title}</div>
       <div className="property__content">{children}</div>
