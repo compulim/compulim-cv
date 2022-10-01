@@ -24,6 +24,11 @@ const SideBar = () => {
         <Property icon="MapPin" title="Address">
           Redmond, WA 98052
         </Property>
+        <Property icon="MapPin" title="Address">
+          Tuen Mun, N.T.
+          <br />
+          Hong Kong
+        </Property>
         {/* <Property icon="CellPhone" title="Cellphone">
           <a href="tel:+852">+852</a>
           {false && <div>20:00 - 12:00 PST</div>}
